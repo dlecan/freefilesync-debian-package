@@ -1,0 +1,17 @@
+Source: freefilesync
+Section: utils
+Priority: optional
+Maintainer: Damien Lecan <dev@dlecan.com>
+Build-Depends: debhelper (>= 7), autotools-dev, libwxgtk2.8-dev, libgtk2.0-dev
+Standards-Version: 3.8.3
+Homepage: http://freefilesync.sourceforge.net/
+
+Package: freefilesync
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: This program is an Open-Source folder comparison and 
+ synchronization tool.
+ It is optimized for highest performance and usability without 
+ restricted or overloaded UI interfaces.
+ .
+ -> See the helpfile for the list of key features!
