@@ -11,7 +11,7 @@
 
 
 configure: configure-stamp
-#	$(MAKE) osspUUID
+
 configure-stamp:
 	dh_testdir
 	# Add here commands to configure the package.
@@ -26,6 +26,9 @@ build-stamp: configure-stamp
 
 	# Add here commands to compile the package.
 	$(MAKE)
+	convert library/FreeFileSync.ico[9] debian/freefilesync.png
+	RealTimeSync/$(MAKE)
+	convert library/RealtimeSync.ico[9] debian/realtimesync.png
 	#docbook-to-man debian/freefilesync.sgml > freefilesync.1
 
 	touch $@
@@ -37,6 +40,7 @@ clean:
 
 	# Add here commands to clean up after the build process.
 	$(MAKE) clean
+	cd RealtimeSync && $(MAKE) clean
 
 	dh_clean 
 
@@ -48,6 +52,7 @@ install: build
 
 	# Add here commands to install the package into debian/freefilesync.
 	$(MAKE) DESTDIR=$(CURDIR)/debian/freefilesync install
+	cd RealtimeSync && $(MAKE) DESTDIR=$(CURDIR)/debian/freefilesync install
 
 
 # Build architecture-independent files here.
