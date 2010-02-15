@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
-	<mime-type type="application/realtimesync.ffs">
-		<comment>RealTimeSync configuration file</comment>
-		<comment xml:lang="fr">Fichier de configuration RealTimeSync</comment>
-		<sub-class-of type="application/xml"/>
-		<glob pattern="*.ffs_real"/>
-	</mime-type>
-</mime-info>
