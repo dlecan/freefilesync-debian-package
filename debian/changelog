@@ -1,4 +1,4 @@
-freefilesync (3.4rc2-0ubuntu1~ppa2~karmic1) karmic; urgency=low
+freefilesync (3.4rc2-0ubuntu1~ppa3~karmic1) karmic; urgency=low
 
   * Initial release
 
@@ -25,4 +25,6 @@ freefilesync (3.4rc2-0ubuntu1~ppa2~karmic1) karmic; urgency=low
     - Integration of RealTimeSync tool
     - Improve icon management
 
- -- Damien Lecan <dev@dlecan.com>  Mon, 15 Feb 2010 13:09:42 +0100
+  * Improve .desktop file descriptions
+
+ -- Damien Lecan <dev@dlecan.com>  Mon, 15 Feb 2010 17:04:42 +0100

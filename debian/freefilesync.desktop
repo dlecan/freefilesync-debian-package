@@ -1,8 +1,8 @@
 [Desktop Entry]
 Name=FreeFileSync synchronization tool
-Name[fr]=Outil de synchronisation FreeFileSync
-Comment=Files and folders synchronization tool
-Comment[fr]=Outil de synchronisation de fichiers et de dossiers
+Name[fr]=Synchronisation de fichiers FreeFileSync
+Comment=Files synchronization tool
+Comment[fr]=Outil de synchronisation de fichiers
 GenericName=Synchronization tool
 GenericName[fr]=Outil de synchronisation
 Exec=FreeFileSync %f

@@ -1,10 +1,10 @@
 [Desktop Entry]
 Name=RealtimeSync synchronization tool
-Name[fr]=Outil de synchronisation RealtimeSync
-Comment=Realtime files and folders synchronization tool
-Comment[fr]=Outil de synchronisation de fichiers et de dossiers en temps réel
+Name[fr]=Synchronisation automatique de fichiers RealtimeSync
+Comment=Realtime files synchronization tool
+Comment[fr]=Outil de synchronisation automatique de fichiers
 GenericName=Realtime synchronization tool
-GenericName[fr]=Outil de synchronisation en temps réel
+GenericName[fr]=Outil de synchronisation automatique
 Exec=RealtimeSync %f
 Terminal=false
 Type=Application
