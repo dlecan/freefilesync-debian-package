@@ -1,4 +1,37 @@
+freefilesync (3.4rc2-0ubuntu1~ppa4) karmic; urgency=low
+ 
+  * Update version
+
+ -- Damien Lecan <dev@dlecan.com>  Mon, 01 Mar 2010 10:16:14 +0100
+
 freefilesync (3.4rc2-0ubuntu1~ppa3~karmic1) karmic; urgency=low
+
+  * Update version
+
+ -- Damien Lecan <dev@dlecan.com>  Mon, 15 Feb 2010 17:04:42 +0100
+
+freefilesync (3.4rc2-0ubuntu1~ppa2~karmic1) karmic; urgency=low
+
+  * Update version
+
+ -- Damien Lecan <dev@dlecan.com>  Mon, 15 Feb 2010 13:09:42 +0100
+
+freefilesync (3.4rc2-0ubuntu1~ppa1~karmic1) karmic; urgency=low
+
+  * Update version
+
+ -- Damien Lecan <dev@dlecan.com>  Mon, 15 Feb 2010 13:09:42 +0100
+
+freefilesync (3.4rc2-0ubuntu1~ppa12) karmic; urgency=low
+  
+  * Upgrade to 3.4rc2
+    - Integration RealTimeSync tool
+    - improve icon management
+
+ -- Damien Lecan <dev@dlecan.com>  Thu, 11 Feb 2010 14:41:19 +0100
+
+
+freefilesync (3.4rc1-0ubuntu1~ppa11) karmic; urgency=low
 
   * Initial release
 
@@ -20,11 +53,5 @@ freefilesync (3.4rc2-0ubuntu1~ppa3~karmic1) karmic; urgency=low
   * Improve package building (again)
   
   * Improve package building (and again)
-  
-  * Upgrade to 3.4rc2
-    - Integration of RealTimeSync tool
-    - Improve icon management
 
-  * Improve .desktop file descriptions
-
- -- Damien Lecan <dev@dlecan.com>  Mon, 15 Feb 2010 17:04:42 +0100
+ -- Damien Lecan <dev@dlecan.com>  Mon, 08 Feb 2010 15:47:16 +0100
