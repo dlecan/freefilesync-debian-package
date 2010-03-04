@@ -1,3 +1,9 @@
+freefilesync (3.4.0-0ubuntu1~ppa1) karmic; urgency=low
+ 
+  * New upstream version (3.4)
+
+ -- Damien Lecan <dev@dlecan.com>  Thu, 04 Mar 2010 14:32:36 +0100
+
 freefilesync (3.4rc2-0ubuntu1~ppa4) karmic; urgency=low
  
   * Update version
