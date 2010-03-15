@@ -1,8 +1,9 @@
 freefilesync (3.4.0-0ubuntu1~ppa2) karmic; urgency=low
- 
+
+  * Add icons in Nautilus for *.ffs_gui files 
   * Improve mime types declaration
 
- -- Damien Lecan <dev@dlecan.com>  Mon, 15 Mar 2010 14:13:14 +0100
+ -- Damien Lecan <dev@dlecan.com>  Mon, 15 Mar 2010 14:45:35 +0100
 
 freefilesync (3.4.0-0ubuntu1~ppa1) karmic; urgency=low
  
