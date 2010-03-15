@@ -26,9 +26,12 @@ build-stamp: configure-stamp
 
 	# Add here commands to compile the package.
 	$(MAKE)
-	convert library/FreeFileSync.ico[9] debian/freefilesync.png
 	cd RealtimeSync && $(MAKE)
+	
+	# Extract program icons
+	convert library/FreeFileSync.ico[9] debian/freefilesync.png
 	convert RealtimeSync/RealtimeSync.ico[0] debian/realtimesync.png
+		
 	#docbook-to-man debian/freefilesync.sgml > freefilesync.1
 
 	touch $@
