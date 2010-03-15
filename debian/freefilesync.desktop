@@ -10,6 +10,6 @@ Terminal=false
 Type=Application
 Icon=freefilesync
 Categories=Utility;FileTools;GTK;
-MimeType=application/freefilesync.ffs
+MimeType=application/x-freefilesync-ffs
 StartupWMClass=FreeFileSync
 StartupNotify=true
