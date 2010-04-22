@@ -45,7 +45,14 @@ build-stamp: configure-stamp
 	convert library/FreeFileSync.ico[12] debian/16x16/application-x-freefilesync-ffs.png
 	
 	# RealTimeSync
-	convert RealtimeSync/RealtimeSync.ico[0] debian/realtimesync.png
+	convert RealtimeSync/RealtimeSync.ico[0] debian/128x128/realtimesync.png
+	convert RealtimeSync/RealtimeSync.ico[0] debian/128x128/application-x-freefilesync-real.png
+	convert RealtimeSync/RealtimeSync.ico[1] debian/48x48/realtimesync.png
+	convert RealtimeSync/RealtimeSync.ico[1] debian/48x48/application-x-freefilesync-real.png
+	convert RealtimeSync/RealtimeSync.ico[2] debian/32x32/realtimesync.png
+	convert RealtimeSync/RealtimeSync.ico[2] debian/32x32/application-x-freefilesync-real.png
+	convert RealtimeSync/RealtimeSync.ico[3] debian/16x16/realtimesync.png
+	convert RealtimeSync/RealtimeSync.ico[3] debian/16x16/application-x-freefilesync-real.png
 		
 	#docbook-to-man debian/freefilesync.sgml > freefilesync.1
 

@@ -8,5 +8,12 @@ freefilesync.desktop /usr/share/applications/
 32x32/application-x-freefilesync-ffs.png /usr/share/icons/hicolor/32x32/mimetypes/
 16x16/freefilesync.png /usr/share/icons/hicolor/16x16/apps/
 16x16/application-x-freefilesync-ffs.png /usr/share/icons/hicolor/16x16/mimetypes/
-realtimesync.desktop /usr/share/applications/
-realtimesync.png /usr/share/pixmaps/
+128x128/realtimesync.png /usr/share/pixmaps/
+128x128/realtimesync.png /usr/share/icons/hicolor/128x128/apps/
+128x128/application-x-freefilesync-real.png /usr/share/icons/hicolor/128x128/mimetypes/
+48x48/realtimesync.png /usr/share/icons/hicolor/48x48/apps/
+48x48/application-x-freefilesync-real.png /usr/share/icons/hicolor/48x48/mimetypes/
+32x32/realtimesync.png /usr/share/icons/hicolor/32x32/apps/
+32x32/application-x-freefilesync-real.png /usr/share/icons/hicolor/32x32/mimetypes/
+16x16/realtimesync.png /usr/share/icons/hicolor/16x16/apps/
+16x16/application-x-freefilesync-real.png /usr/share/icons/hicolor/16x16/mimetypes/
