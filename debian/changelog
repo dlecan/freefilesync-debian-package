@@ -1,3 +1,9 @@
+freefilesync (3.6.0-0ubuntu1~ppa3) karmic; urgency=low
+
+  * Add missing installation of realtimesync.desktop file
+
+ -- Damien Lecan <dev@dlecan.com>  Fri, 30 Apr 2010 10:56:37 +0100
+ 
 freefilesync (3.6.0-0ubuntu1~ppa2) karmic; urgency=low
 
   * Improve icon management of RealTimeSync
