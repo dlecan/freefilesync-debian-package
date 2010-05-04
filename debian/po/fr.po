@@ -1,0 +1,24 @@
+
+#: realtimesync.desktop.in:3
+msgid "RealtimeSync synchronization tool"
+msgstr "Synchronisation automatique de fichiers RealtimeSync"
+
+#: realtimesync.desktop.in:4
+msgid "Realtime files synchronization tool"
+msgstr "Outil de synchronisation automatique de fichiers"
+
+#: realtimesync.desktop.in:5
+msgid "Realtime synchronization tool"
+msgstr "Outil de synchronisation automatique"
+
+#: freefilesync.desktop.in:3
+msgid "FreeFileSync synchronization tool"
+msgstr "Synchronisation de fichiers FreeFileSync"
+
+#: freefilesync.desktop.in:4
+msgid "Files synchronization tool"
+msgstr "Outil de synchronisation de fichiers"
+
+#: freefilesync.desktop.in:5
+msgid "Synchronization tool"
+msgstr "Outil de synchronisation"
