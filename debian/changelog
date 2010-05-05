@@ -1,3 +1,9 @@
+freefilesync (3.6.0-0ubuntu1~ppa4) lucid; urgency=low
+
+  * Add translations of .desktop files
+
+ -- Damien Lecan <dev@dlecan.com>  Wed, 05 May 2010 11:29:13 +0100
+ 
 freefilesync (3.6.0-0ubuntu1~ppa3) karmic; urgency=low
 
   * Add missing installation of realtimesync.desktop file
