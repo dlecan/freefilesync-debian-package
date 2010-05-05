@@ -1,0 +1,11 @@
+[Desktop Entry]
+_Name=RealtimeSync synchronization tool
+_Comment=Realtime files synchronization tool
+_GenericName=Realtime synchronization tool
+Exec=RealtimeSync %f
+Terminal=false
+Type=Application
+Icon=realtimesync
+Categories=Utility;FileTools;GTK;
+MimeType=application/x-freefilesync-real
+StartupNotify=true

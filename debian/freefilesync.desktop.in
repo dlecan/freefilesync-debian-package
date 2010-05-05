@@ -1,0 +1,12 @@
+[Desktop Entry]
+_Name=FreeFileSync synchronization tool
+_Comment=Files synchronization tool
+_GenericName=Synchronization tool
+Exec=FreeFileSync %f
+Terminal=false
+Type=Application
+Icon=freefilesync
+Categories=Utility;FileTools;GTK;
+MimeType=application/x-freefilesync-ffs
+StartupWMClass=FreeFileSync
+StartupNotify=true
