@@ -55,8 +55,8 @@ build-stamp: configure-stamp
 	convert RealtimeSync/RealtimeSync.ico[3] debian/16x16/application-x-freefilesync-real.png
 	
 	# Build desktop files
-	intltool-merge po/freefilesync -d -u -c po/.intltool-merge-cache freefilesync.desktop.in freefilesync.desktop
-	intltool-merge po/freefilesync -d -u -c po/.intltool-merge-cache realtimesync.desktop.in realtimesync.desktop
+	intltool-merge debian/po/freefilesync -d -u -c debian/po/.intltool-merge-cache debian/freefilesync.desktop.in debian/freefilesync.desktop
+	intltool-merge debian/po/freefilesync -d -u -c debian/po/.intltool-merge-cache debian/realtimesync.desktop.in debian/realtimesync.desktop
 		
 	#docbook-to-man debian/freefilesync.sgml > freefilesync.1
 
