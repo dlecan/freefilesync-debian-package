@@ -14,20 +14,12 @@ msgstr ""
 msgid "RealtimeSync synchronization tool"
 msgstr ""
 
-#: realtimesync.desktop.in:4
-msgid "Realtime files synchronization tool"
-msgstr ""
-
 #: realtimesync.desktop.in:5
 msgid "Realtime synchronization tool"
 msgstr ""
 
 #: freefilesync.desktop.in:3
 msgid "FreeFileSync synchronization tool"
-msgstr ""
-
-#: freefilesync.desktop.in:4
-msgid "Files synchronization tool"
 msgstr ""
 
 #: freefilesync.desktop.in:5
