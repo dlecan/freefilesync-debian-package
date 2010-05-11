@@ -1,3 +1,9 @@
+freefilesync (3.6.0-0ubuntu1~ppa5) lucid; urgency=low
+
+  * Update .desktop files translations
+
+ -- Damien Lecan <dev@dlecan.com>  Tue, 11 May 2010 13:47:26 +0100
+
 freefilesync (3.6.0-0ubuntu1~ppa4) lucid; urgency=low
 
   * Add translations of .desktop files
