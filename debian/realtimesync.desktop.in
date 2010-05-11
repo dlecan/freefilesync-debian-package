@@ -1,6 +1,6 @@
 [Desktop Entry]
-_Name=RealtimeSync synchronization tool
-_Comment=Realtime files synchronization tool
+_Name=RealtimeSync real-time file synchronization tool
+_Comment=Keep files and folders synchronized in real-time
 Exec=RealtimeSync %f
 Terminal=false
 Type=Application

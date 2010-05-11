@@ -10,18 +10,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: realtimesync.desktop.in:3
-msgid "RealtimeSync synchronization tool"
+#: realtimesync.desktop.in:2
+msgid "RealtimeSync real-time file synchronization tool"
 msgstr ""
 
-#: realtimesync.desktop.in:5
-msgid "Realtime synchronization tool"
+#: realtimesync.desktop.in:3
+msgid "Keep files and folders synchronized in real-time"
+msgstr ""
+
+#: freefilesync.desktop.in:2
+msgid "FreeFileSync file synchronization tool"
 msgstr ""
 
 #: freefilesync.desktop.in:3
-msgid "FreeFileSync synchronization tool"
-msgstr ""
-
-#: freefilesync.desktop.in:5
-msgid "Synchronization tool"
+msgid "Keep files and folders synchronized"
 msgstr ""
