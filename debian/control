@@ -8,7 +8,7 @@ Homepage: http://freefilesync.sourceforge.net/
 
 Package: freefilesync
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, xdg-utils
 Description: This program is an Open-Source folder comparison and synchronization tool.
  It's key features:
  * Volume Shadow Copy Service
