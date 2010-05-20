@@ -2,36 +2,28 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-06 16:18+0000\n"
-"PO-Revision-Date: 2010-05-06 16:55+0000\n"
+"POT-Creation-Date: 2010-05-11 12:10+0000\n"
+"PO-Revision-Date: 2010-05-19 09:03+0000\n"
 "Last-Translator: Damien Lecan <Unknown>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-05-08 04:12+0000\n"
+"X-Launchpad-Export-Date: 2010-05-20 05:46+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
+#: realtimesync.desktop.in:2
+msgid "RealtimeSync real-time file synchronization tool"
+msgstr "Synchronisation de fichiers en temps réel RealtimeSync"
+
 #: realtimesync.desktop.in:3
-msgid "RealtimeSync synchronization tool"
-msgstr "Synchronisation automatique de fichiers RealtimeSync"
+msgid "Keep files and folders synchronized in real-time"
+msgstr "Gardez vos fichiers et dossiers synchronisés en temps réel"
 
-#: realtimesync.desktop.in:4
-msgid "Realtime files synchronization tool"
-msgstr "Outil de synchronisation automatique de fichiers"
-
-#: realtimesync.desktop.in:5
-msgid "Realtime synchronization tool"
-msgstr "Outil de synchronisation automatique"
-
-#: freefilesync.desktop.in:3
-msgid "FreeFileSync synchronization tool"
+#: freefilesync.desktop.in:2
+msgid "FreeFileSync file synchronization tool"
 msgstr "Synchronisation de fichiers FreeFileSync"
 
-#: freefilesync.desktop.in:4
-msgid "Files synchronization tool"
-msgstr "Outil de synchronisation de fichiers"
-
-#: freefilesync.desktop.in:5
-msgid "Synchronization tool"
-msgstr "Outil de synchronisation"
+#: freefilesync.desktop.in:3
+msgid "Keep files and folders synchronized"
+msgstr "Gardez vos fichiers et dossiers synchronisés"
