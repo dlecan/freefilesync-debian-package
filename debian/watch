@@ -1,0 +1,4 @@
+version=3
+
+opts="uversionmangle=s/$/.0/" \
+http://sf.net/freefilesync/Sourcecode_v([0-9]+\.[0-9]+).zip
