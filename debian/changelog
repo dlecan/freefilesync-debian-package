@@ -1,3 +1,10 @@
+freefilesync (3.7.0-0ubuntu1~ppa2) lucid; urgency=low
+
+  * Prepare for new translations
+  * Update .desktop files translations
+
+ -- Damien Lecan <dev@dlecan.com>  Thu, 27 May 2010 11:40:31 +0100
+
 freefilesync (3.7.0-0ubuntu1~ppa1) lucid; urgency=low
 
   * New upstream version (3.7)
