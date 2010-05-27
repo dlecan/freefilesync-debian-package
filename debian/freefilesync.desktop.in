@@ -1,7 +1,6 @@
 [Desktop Entry]
-_Name=FreeFileSync synchronization tool
-_Comment=Files synchronization tool
-_GenericName=Synchronization tool
+_Name=FreeFileSync
+_Comment=Keep files and folders synchronized
 Exec=FreeFileSync %f
 Terminal=false
 Type=Application
