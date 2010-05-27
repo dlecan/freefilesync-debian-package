@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-11 12:10+0000\n"
-"PO-Revision-Date: 2010-05-12 15:17+0000\n"
+"PO-Revision-Date: 2010-05-27 08:16+0000"
 "Last-Translator: Jonay <jonay.santana@gmail.com>\n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -13,17 +13,16 @@ msgstr ""
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: realtimesync.desktop.in:2
-msgid "RealtimeSync real-time file synchronization tool"
-msgstr ""
-"RealtimeSync herramienta de sincronización de archivos en tiempo real"
+msgid "RealtimeSync"
+msgstr "RealtimeSync"
 
 #: realtimesync.desktop.in:3
-msgid "Keep files and folders synchronized in real-time"
-msgstr "Mantiene sincronizados en tiempo real ficheros y carpetas"
+msgid "Start synchronization in real time"
+msgstr ""
 
 #: freefilesync.desktop.in:2
-msgid "FreeFileSync file synchronization tool"
-msgstr "FreeFileSync herramienta de sincronización de ficheros"
+msgid "FreeFileSync"
+msgstr "FreeFileSync"
 
 #: freefilesync.desktop.in:3
 msgid "Keep files and folders synchronized"
