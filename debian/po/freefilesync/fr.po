@@ -2,19 +2,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-11 12:10+0000\n"
-"PO-Revision-Date: 2010-05-27 08:16+0000"
-"Last-Translator: Damien Lecan <Unknown>\n"
+"POT-Creation-Date: 2010-05-27 08:18+0000\n"
+"PO-Revision-Date: 2010-05-27 08:46+0000\n"
+"Last-Translator: FreeFileSync <Unknown>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2010-05-20 05:46+0000\n"
+"X-Launchpad-Export-Date: 2010-05-28 03:47+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: realtimesync.desktop.in:2
 msgid "RealtimeSync"
-msgstr ""
+msgstr "RealtimeSync"
 
 #: realtimesync.desktop.in:3
 msgid "Start synchronization in real time"
@@ -22,7 +22,7 @@ msgstr "Lancez une synchronisation en temps réel"
 
 #: freefilesync.desktop.in:2
 msgid "FreeFileSync"
-msgstr ""
+msgstr "FreeFileSync"
 
 #: freefilesync.desktop.in:3
 msgid "Keep files and folders synchronized"
