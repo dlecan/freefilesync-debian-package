@@ -35,14 +35,14 @@ build-stamp: configure-stamp
 	mkdir debian/16x16
 	
 	# FreeFileSync
-	convert library/FreeFileSync.ico[9]  debian/128x128/freefilesync.png
-	convert library/FreeFileSync.ico[9]  debian/128x128/application-x-freefilesync-ffs.png
-	convert library/FreeFileSync.ico[10] debian/48x48/freefilesync.png
-	convert library/FreeFileSync.ico[10] debian/48x48/application-x-freefilesync-ffs.png
-	convert library/FreeFileSync.ico[11] debian/32x32/freefilesync.png
-	convert library/FreeFileSync.ico[11] debian/32x32/application-x-freefilesync-ffs.png
-	convert library/FreeFileSync.ico[12] debian/16x16/freefilesync.png
-	convert library/FreeFileSync.ico[12] debian/16x16/application-x-freefilesync-ffs.png
+	convert library/FreeFileSync.ico[0]  debian/128x128/freefilesync.png
+	convert library/FreeFileSync.ico[0]  debian/128x128/application-x-freefilesync-ffs.png
+	convert library/FreeFileSync.ico[1] debian/48x48/freefilesync.png
+	convert library/FreeFileSync.ico[1] debian/48x48/application-x-freefilesync-ffs.png
+	convert library/FreeFileSync.ico[2] debian/32x32/freefilesync.png
+	convert library/FreeFileSync.ico[2] debian/32x32/application-x-freefilesync-ffs.png
+	convert library/FreeFileSync.ico[3] debian/16x16/freefilesync.png
+	convert library/FreeFileSync.ico[3] debian/16x16/application-x-freefilesync-ffs.png
 	
 	# RealTimeSync
 	convert RealtimeSync/RealtimeSync.ico[0] debian/128x128/realtimesync.png

@@ -1,3 +1,22 @@
+freefilesync (3.8-0ubuntu1~ppa1) lucid; urgency=low
+
+  * New upstream version (3.8)
+  * Upstream changelog
+    New options handling Symlinks: ignore/direct/follow => warning: new database format for <Automatic> mode
+    Fixed crash when starting sync for Windows XP SP2
+    Prevent tooltip from stealing focus
+    Show associated file icons (Linux)
+    Run folder existence checks in separate thread (faster network share access)
+    Write <Automatic> mode database file even if both sides are already in sync
+    Don't raise status dialog to the top after synchronisation
+    Embedded version information into executable (Windows)
+    Migrated Compiler to Visual C++ 2010 (Windows)
+    Avoid losing manual changes when excluding via context menu
+    Adjusted auto-updater web-address
+    Updated translation files
+
+ -- Damien Lecan <dev@dlecan.com>  Wed, 23 Jun 2010 09:40:27 +0100
+
 freefilesync (3.7.0-0ubuntu1~ppa2) lucid; urgency=low
 
   * Prepare for new translations
