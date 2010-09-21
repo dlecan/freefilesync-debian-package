@@ -1,3 +1,9 @@
+freefilesync (3.11-0ubuntu1~ppa1) lucid; urgency=low
+
+  * New upstream version (3.11)
+
+ -- Damien Lecan <damien@portable>  Tue, 21 Sep 2010 22:02:37 +0200
+
 freefilesync (3.9-0ubuntu1~ppa2) lucid; urgency=low
 
   * New tentative to use backport of liboost 1.42
