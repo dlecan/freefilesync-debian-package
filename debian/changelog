@@ -1,3 +1,15 @@
+freefilesync (3.11-0ubuntu1~ppa2) lucid; urgency=low
+
+  * Build system is now patched
+
+ -- Damien Lecan <dev@dlecan.com>  Tue, 19 Oct 2010 21:05:41 +0100
+
+freefilesync (3.11-0ubuntu1~ppa1) lucid; urgency=low
+
+  * New upstream version : FFS 3.11
+
+ -- Damien Lecan <dev@dlecan.com>  Tue, 12 Oct 2010 22:32:53 +0100
+
 freefilesync (3.9-0ubuntu1~ppa3) lucid; urgency=low
 
   * Use backport of liboost 1.44
