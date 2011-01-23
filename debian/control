@@ -3,7 +3,7 @@ Section: utils
 Priority: optional
 Maintainer: Damien Lecan <dev@dlecan.com>
 Build-Depends: debhelper (>= 7), autotools-dev, libwxgtk2.8-dev, libgtkmm-2.4-dev, imagemagick, intltool, libboost1.44-all-dev (>= 1.44)
-Standards-Version: 3.8.4
+Standards-Version: 3.9.1
 Homepage: http://freefilesync.sourceforge.net/
 
 Package: freefilesync

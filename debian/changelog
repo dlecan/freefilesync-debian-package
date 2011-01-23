@@ -1,3 +1,9 @@
+freefilesync (3.13-0ubuntu1~ppa1) lucid; urgency=low
+
+  * New upstream version : FFS 3.13
+
+ -- Damien Lecan <dev@dlecan.com>  Sun, 23 Jan 2011 18:34:39 +0100
+
 freefilesync (3.11-0ubuntu1~ppa2) lucid; urgency=low
 
   * Build system is now patched
