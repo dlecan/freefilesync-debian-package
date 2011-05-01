@@ -1,3 +1,27 @@
+freefilesync (3.16-0ubuntu1~ppa1) lucid; urgency=low
+
+  * New upstream version : FFS 3.16
+
+ -- Damien Lecan <dev@dlecan.com>  Sun, 01 May 2011 16:10:04 +0100
+
+freefilesync (3.14-0ubuntu1~ppa3) lucid; urgency=low
+
+  * Fix bug with icon size (bis)
+
+ -- Damien Lecan <dev@dlecan.com>  Thu, 31 Mar 2011 14:56:27 +0100
+
+freefilesync (3.14-0ubuntu1~ppa2) lucid; urgency=low
+
+  * Fix bug with icon size
+
+ -- Damien Lecan <dev@dlecan.com>  Thu, 31 Mar 2011 14:38:48 +0100
+
+freefilesync (3.14-0ubuntu1~ppa1) lucid; urgency=low
+
+  * New upstream version : FFS 3.14
+
+ -- Damien Lecan <dev@dlecan.com>  Wed, 23 Mar 2011 21:48:07 +0100
+
 freefilesync (3.13-0ubuntu1~ppa1) lucid; urgency=low
 
   * New upstream version : FFS 3.13
