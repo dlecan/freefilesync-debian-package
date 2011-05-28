@@ -1,3 +1,21 @@
+freefilesync (3.17.2-0ubuntu1~ppa1) lucid; urgency=low
+
+  * New upstream version : FFS 3.17.2
+
+ -- Damien Lecan <dev@dlecan.com>  Fri, 28 May 2011 17:20:13 +0100
+
+freefilesync (3.17.1-0ubuntu1~ppa1) lucid; urgency=low
+
+  * New upstream version : FFS 3.17.1
+
+ -- Damien Lecan <dev@dlecan.com>  Fri, 27 May 2011 18:51:58 +0100
+
+freefilesync (3.17-0ubuntu1~ppa1) lucid; urgency=low
+
+  * New upstream version : FFS 3.17
+
+ -- Damien Lecan <dev@dlecan.com>  Sun, 22 May 2011 12:33:21 +0100
+
 freefilesync (3.16-0ubuntu1~ppa1) lucid; urgency=low
 
   * New upstream version : FFS 3.16
