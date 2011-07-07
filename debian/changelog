@@ -1,3 +1,22 @@
+freefilesync (3.18-0ubuntu1~ppa1) lucid; urgency=low
+
+  * New upstream version : FFS 3.18
+  * Changelog :
+    * Launcher running synchronously and returning application error code
+    * Fixed sort by file extension
+    * Fixed drag and drop of SAMBA network folder
+    * Render (all) invalid file dates correctly on GUI
+    * Correct layout selection for RTL and LTR languages
+    * Correct GUI status texts while waiting for directory lock
+    * Properly set default directory when loading configuration
+    * New XML framework: zenXML
+    * Addded Hebrew language
+    * Addded Danish language
+    * Updated translation files
+
+ -- Damien Lecan <dev@dlecan.com>  Fri, 7 Jul 2011 15:47:27 +0100
+
+
 freefilesync (3.17.2-0ubuntu1~ppa1) lucid; urgency=low
 
   * New upstream version : FFS 3.17.2
