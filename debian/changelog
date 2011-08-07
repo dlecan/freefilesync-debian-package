@@ -1,6 +1,26 @@
-freefilesync (3.18-0ubuntu1~ppa3) lucid; urgency=low
+freefilesync (3.19-0ubuntu1~ppa1) natty; urgency=low
 
+  * Lucid and Maverick support is discontinued
   * Change dependencies : gcc (>= 4:4.5) and libboost 1.46
+  * New upstream version : FFS 3.19
+    * Exclude directories from synchronization which cannot be accessed during comparison
+    * Warning if Recycle Bin is not available instead of deleting silently
+    * Adapted log message if missing recycler leads to permanent deletion (Windows)
+    * Revert to per file recycle bin handling if creating temp recycler folder fails
+    * Avoid orphaned deletion temp directories on network drives
+    * Quick-select comparison and synchronization options via double-click
+    * New right-click dropdown menu on comparison and synchronization settings button
+    * New database design: copying the database file does not lead to complications anymore
+    * Full support for "retry" while comparing
+    * Don't copy empty folders when filtering by timespan
+    * Allow loading/merging multiple configurations files via file open dialog
+    * Allow loading/merging multiple configurations in last used config list
+    * Fixed system shutdown interruption during batch mode
+    * Allow saving log files in both silent and non-silent batch jobs
+    * Reduced main dialog flicker when switching configurations
+    * Database and lock files created by FreeFileSync do not trigger RealtimeSync anymore
+    * Restrict maximum number of visible folder pairs to 6 (configurable via GlobalSettings.xml)
+    * New macros: %day%, %hour%, %min%, %sec%
 
  -- Damien Lecan <dev@dlecan.com>  Sun, 7 Aug 2011 15:53:33 +0100
 
