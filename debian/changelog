@@ -1,3 +1,9 @@
+freefilesync (3.18-0ubuntu1~ppa3) lucid; urgency=low
+
+  * Change dependencies : gcc (>= 4:4.5) and libboost 1.46
+
+ -- Damien Lecan <dev@dlecan.com>  Sun, 7 Aug 2011 15:53:33 +0100
+
 freefilesync (3.18-0ubuntu1~ppa1) lucid; urgency=low
 
   * New upstream version : FFS 3.18
@@ -15,7 +21,6 @@ freefilesync (3.18-0ubuntu1~ppa1) lucid; urgency=low
     * Updated translation files
 
  -- Damien Lecan <dev@dlecan.com>  Fri, 7 Jul 2011 15:47:27 +0100
-
 
 freefilesync (3.17.2-0ubuntu1~ppa1) lucid; urgency=low
 
