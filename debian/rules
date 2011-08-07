@@ -30,7 +30,9 @@ build-stamp: configure-stamp
 	
 	# Extract program icons
 	mkdir debian/256x256
-	mkdir debian/128x128
+	# Do not generate 128x128 image on platform > Lucid, as 'convert' is not able to handle it
+	# See LP : 807013
+	#mkdir debian/128x128
 	mkdir debian/48x48
 	mkdir debian/32x32
 	mkdir debian/16x16

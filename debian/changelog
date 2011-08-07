@@ -1,3 +1,21 @@
+freefilesync (3.19.1-0ubuntu1~ppa3) natty; urgency=low
+
+  * Try to fix 128x128 bug (bis)
+
+ -- Damien Lecan <dev@dlecan.com>  Sun, 7 Aug 2011 22:45:56 +0100
+
+freefilesync (3.19.1-0ubuntu1~ppa2) natty; urgency=low
+
+  * Try to fix 128x128 bug
+
+ -- Damien Lecan <dev@dlecan.com>  Sun, 7 Aug 2011 22:10:13 +0100
+
+freefilesync (3.19.1-0ubuntu1~ppa1) natty; urgency=low
+
+  * New upstream version : FFS 3.19.1
+
+ -- Damien Lecan <dev@dlecan.com>  Sun, 7 Aug 2011 21:40:45 +0100
+
 freefilesync (3.19-0ubuntu1~ppa2) natty; urgency=low
 
   * Update dependencies
