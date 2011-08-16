@@ -1,3 +1,18 @@
+freefilesync (3.20-0ubuntu1~ppa1) natty; urgency=low
+
+  * New upstream version : FFS 3.20
+  * Changelog :
+    * Scan multiple directories in parallel
+    * Automatically resolve disconnected network maps
+    * Fixed temporal hang when dropping large files on main dialog
+    * <Automatic> mode: Fixed issue regarding directory names differing in case during first sync
+    * Delete permanently if recycle bin is not available (Linux)
+    * Keep FreeFileSync responsive when trying to access non-existent network folder
+    * Support for Ubuntu Unity Launcher (Linux)
+    * RealtimeSync: Failure notification if command line is invalid (Linux)
+
+ -- Damien Lecan <dev@dlecan.com>  TUe, 16 Aug 2011 11:57:31 +0100
+
 freefilesync (3.19.1-0ubuntu1~ppa3) natty; urgency=low
 
   * Try to fix 128x128 bug (bis)
