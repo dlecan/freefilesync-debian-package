@@ -48,6 +48,12 @@ freefilesync (3.19-0ubuntu1~ppa1) natty; urgency=low
 
  -- Damien Lecan <dev@dlecan.com>  Sun, 7 Aug 2011 15:53:33 +0100
 
+freefilesync (3.18-0ubuntu1~ppa2) natty; urgency=low
+  
+  * Change ditribution (lucid -> natty) in order to use gcc 4.5
+
+ -- Damien Lecan <dev@dlecan.com>  Fri, 8 Jul 2011 10:31:41 +0100
+
 freefilesync (3.18-0ubuntu1~ppa1) lucid; urgency=low
 
   * New upstream version : FFS 3.18
