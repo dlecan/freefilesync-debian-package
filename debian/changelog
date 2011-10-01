@@ -1,3 +1,38 @@
+freefilesync (4.0-0ubuntu1~ppa1) natty; urgency=low
+
+  * New upstream version : FFS 4.0
+  * Changelog :
+    * Thumbnail list view
+    * Option to specify comparison settings at folder pair level
+    * Correctly update parent-child relationship when changing sync directions
+    * Show history list for additional folder pairs
+    * Switch between volume name and full path in directory history list
+    * Perf: shrinked folder matching CPU time by over 70%
+    * Show windows environment strings in directory history list
+    * Show windows special folder IDs in directory history list
+    * Fixed progress dialog going into background on heavy load
+    * Support creating old 8.3 directories
+    * Take over configuration name when creating new batch job
+    * Remember batch-specific settings when loading a ffs_batch file from main dialog
+    * Drag &amp; drop ffs_batch files on main dialog to test and edit batch settings
+    * Automatically resolve objects deleted externally after comparison
+    * Date column context menu: manual time range selector
+    * New categories for time span filter: today, this week, this month, this year
+    * Respect both sides when sorting by relative path
+    * Updated COM error message reporting resolving "Unknown error"
+    * Smarter configuration merge algorithm
+    * Correctly show existing folders on both sides when using include filter
+    * Fixed network access using WebDrive
+    * Update modification times during file copy to write current values to database 
+    * RealtimeSync: write name of changed file into environment variable "changed_file"
+    * RealtimeSync: fixed network drop incorrectly being handled as a failure
+    * Set default direction according to current configuration when deleting manually
+    * Plenty of GUI improvements
+    * Updated help file
+    * Updated translation files
+        
+ -- Damien Lecan <dev@dlecan.com>  Sat, 01 Oct 2011 21:47:10 +0100
+
 freefilesync (3.21-0ubuntu1~ppa1) natty; urgency=low
 
   * New upstream version : FFS 3.21
