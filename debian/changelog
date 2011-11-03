@@ -1,3 +1,9 @@
+freefilesync (4.2-0ubuntu1~ppa1~debian-oneiric1) oneiric; urgency=low
+
+  * Need to built it for Ubuntu
+        
+ -- Damien Lecan <dev@dlecan.com>  Thu, 03 Nov 2011 22:10:17 +0100
+
 freefilesync (4.2-0~ppa1~wheezy1) wheezy; urgency=low
 
   * Adaptation for Debian Wheezy
