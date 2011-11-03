@@ -1,4 +1,32 @@
-freefilesync (4.0-0ubuntu1~ppa1) natty; urgency=low
+freefilesync (4.2-0ubuntu1~ppa1~oneiric1) oneiric; urgency=low
+
+  * New upstream version : FFS 4.2
+  * Changelog :
+    * Implemented workaround for compiler bug leading to uncaught exceptions (Windows 32 bit)
+    * Shadow Copy Service: Native support for Windows7/Server 2008
+    * Fixed reference by volume name parsing issue
+    * Rearranged synchronization progress dialog
+    * More concise log message format
+    * Fixed default file icon (Kubuntu)
+    * Support for wxWidgets 2.9 series (Ubuntu/Kubuntu)
+    * FAT 2 sec tolerance for files dated in the future
+    * Honor DACL/SACL inheritance flags when copying NTFS permissions (Windows)
+    * New option in GlobalSettings.xml: "RunWithBackgroundPriority" (Windows Vista and later)
+  * Changelog for FFS 4.1 :
+    * Improved synchronization progress dialog
+    * Show all available aliases in directory history list
+    * Show password prompt when connecting to mapped network share
+    * Removed busy cursor after program startup
+    * RealtimeSync: atomically detect missing directories
+    * Handle not existing reference by volume name as an invalid path
+    * Improved startup responsiveness by checking dir/file existence asynchronously
+    * Fixed incorrect directory name loading when using multiple folder pairs
+    * Allow passing multiple configurations via command line
+    * Allow passing multiple directory names via command line
+        
+ -- Damien Lecan <dev@dlecan.com>  Thu, 03 Nov 2011 21:45:45 +0100
+
+freefilesync (4.0-0ubuntu1~ppa1~oneiric1) oneiric; urgency=low
 
   * New upstream version : FFS 4.0
   * Changelog :
