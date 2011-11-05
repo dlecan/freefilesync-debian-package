@@ -38,18 +38,18 @@ build-stamp: configure-stamp
 	mkdir debian/16x16
 	
 	# FreeFileSync
-	convert library/FreeFileSync.ico[0] debian/256x256/freefilesync.png
-	convert library/FreeFileSync.ico[0] debian/256x256/application-x-freefilesync-ffs.png
+	convert lib/FreeFileSync.ico[0] debian/256x256/freefilesync.png
+	convert lib/FreeFileSync.ico[0] debian/256x256/application-x-freefilesync-ffs.png
 	# Do not generate 128x128 image on platform > Lucid, as 'convert' is not able to handle it
 	# See LP : 807013
-	#convert library/FreeFileSync.ico[1] debian/128x128/freefilesync.png
-	#convert library/FreeFileSync.ico[1] debian/128x128/application-x-freefilesync-ffs.png
-	convert library/FreeFileSync.ico[2] debian/48x48/freefilesync.png
-	convert library/FreeFileSync.ico[2] debian/48x48/application-x-freefilesync-ffs.png
-	convert library/FreeFileSync.ico[3] debian/32x32/freefilesync.png
-	convert library/FreeFileSync.ico[3] debian/32x32/application-x-freefilesync-ffs.png
-	convert library/FreeFileSync.ico[4] debian/16x16/freefilesync.png
-	convert library/FreeFileSync.ico[4] debian/16x16/application-x-freefilesync-ffs.png
+	#convert lib/FreeFileSync.ico[1] debian/128x128/freefilesync.png
+	#convert lib/FreeFileSync.ico[1] debian/128x128/application-x-freefilesync-ffs.png
+	convert lib/FreeFileSync.ico[2] debian/48x48/freefilesync.png
+	convert lib/FreeFileSync.ico[2] debian/48x48/application-x-freefilesync-ffs.png
+	convert lib/FreeFileSync.ico[3] debian/32x32/freefilesync.png
+	convert lib/FreeFileSync.ico[3] debian/32x32/application-x-freefilesync-ffs.png
+	convert lib/FreeFileSync.ico[4] debian/16x16/freefilesync.png
+	convert lib/FreeFileSync.ico[4] debian/16x16/application-x-freefilesync-ffs.png
 	
 	# RealTimeSync
 	convert RealtimeSync/RealtimeSync.ico[0] debian/256x256/realtimesync.png

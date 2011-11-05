@@ -1,3 +1,9 @@
+freefilesync (4.2-0ubuntu1~ppa2~oneiric1) oneiric; urgency=low
+
+  * "library" folder has been renamed "lib"
+        
+ -- Damien Lecan <dev@dlecan.com>  Thu, 05 Nov 2011 15:05:42 +0100
+
 freefilesync (4.2-0ubuntu1~ppa1~oneiric1) oneiric; urgency=low
 
   * New upstream version : FFS 4.2
