@@ -1,3 +1,15 @@
+freefilesync (4.2-2) unstable; urgency=low
+
+  * Fix Lintian warning
+
+ -- Damien Lecan <dev@dlecan.com>  Sun, 13 Nov 2011 22:22:23 +0100
+
+freefilesync (4.2-1) unstable; urgency=low
+
+  * Closes: #648610
+        
+ -- Damien Lecan <dev@dlecan.com>  Sun, 13 Nov 2011 15:34:49 +0100
+
 freefilesync (4.2-0ubuntu1~ppa3~oneiric1) oneiric; urgency=low
 
   * Clean-up : licenses and dependencies
