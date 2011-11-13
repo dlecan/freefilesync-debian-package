@@ -1,3 +1,9 @@
+freefilesync (4.2-0ubuntu1~ppa3~oneiric1) oneiric; urgency=low
+
+  * Clean-up : licenses and dependencies
+        
+ -- Damien Lecan <dev@dlecan.com>  Sun, 13 Nov 2011 15:10:22 +0100
+
 freefilesync (4.2-0ubuntu1~ppa2~oneiric1) oneiric; urgency=low
 
   * "library" folder has been renamed "lib"
