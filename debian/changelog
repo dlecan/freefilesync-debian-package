@@ -1,3 +1,24 @@
+freefilesync (4.3-1) unstable; urgency=low
+
+  * Closes: #648610
+        
+ -- Damien Lecan <dev@dlecan.com>  Mon, 21 Nov 2011 22:18:47 +0100
+
+freefilesync (4.3-0ubuntu1~ppa1~oneiric1) oneiric; urgency=low
+
+ * New upstream version : FFS 4.3
+ * Changelog :
+   * Detection of moved and renamed files
+   * New database format for &lt;Automatic&gt; mode: a full sync is suggested before upgrading
+   * Fixed overwrite symlink with regular file
+   * Fixed synchronization result dialog GUI glitch (Windows XP)
+   * Fixed macro %weekday%
+   * RealtimeSync: Fixed support for manual volume unmount (Windows)
+   * Added Croatian language
+   * Updated translation files
+     
+ -- Damien Lecan <dev@dlecan.com>  Mon, 21 Nov 2011 22:12:21 +0100
+
 freefilesync (4.2-2) unstable; urgency=low
 
   * Fix Lintian warning
