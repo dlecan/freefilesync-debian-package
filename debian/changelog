@@ -1,21 +1,27 @@
-freefilesync (4.3-1) unstable; urgency=low
+freefilesync (4.3-3) unstable; urgency=low
 
   * Closes: #648610
         
- -- Damien Lecan <dev@dlecan.com>  Mon, 21 Nov 2011 22:18:47 +0100
+ -- Damien Lecan <dev@dlecan.com>  Mon, 23 Nov 2011 21:59:53 +0100
+
+freefilesync (4.3-0ubuntu1~ppa2~oneiric1) oneiric; urgency=low
+
+  * Fix lintian warnings
+     
+ -- Damien Lecan <dev@dlecan.com>  Mon, 23 Nov 2011 21:49:17 +0100
 
 freefilesync (4.3-0ubuntu1~ppa1~oneiric1) oneiric; urgency=low
 
- * New upstream version : FFS 4.3
- * Changelog :
-   * Detection of moved and renamed files
-   * New database format for &lt;Automatic&gt; mode: a full sync is suggested before upgrading
-   * Fixed overwrite symlink with regular file
-   * Fixed synchronization result dialog GUI glitch (Windows XP)
-   * Fixed macro %weekday%
-   * RealtimeSync: Fixed support for manual volume unmount (Windows)
-   * Added Croatian language
-   * Updated translation files
+  * New upstream version : FFS 4.3
+  * Changelog :
+    * Detection of moved and renamed files
+    * New database format for &lt;Automatic&gt; mode: a full sync is suggested before upgrading
+    * Fixed overwrite symlink with regular file
+    * Fixed synchronization result dialog GUI glitch (Windows XP)
+    * Fixed macro %weekday%
+    * RealtimeSync: Fixed support for manual volume unmount (Windows)
+    * Added Croatian language
+    * Updated translation files
      
  -- Damien Lecan <dev@dlecan.com>  Mon, 21 Nov 2011 22:12:21 +0100
 
@@ -42,18 +48,6 @@ freefilesync (4.2-0ubuntu1~ppa2~oneiric1) oneiric; urgency=low
   * "library" folder has been renamed "lib"
         
  -- Damien Lecan <dev@dlecan.com>  Thu, 05 Nov 2011 15:05:42 +0100
-
-freefilesync (4.2-0ubuntu1~ppa1~oneiric1) oneiric; urgency=low
-
-  * Need to built it for Ubuntu
-        
- -- Damien Lecan <dev@dlecan.com>  Thu, 03 Nov 2011 22:10:17 +0100
-
-freefilesync (4.2-0~ppa1~wheezy1) wheezy; urgency=low
-
-  * Adaptation for Debian Wheezy
-        
- -- Damien Lecan <dev@dlecan.com>  Thu, 03 Nov 2011 21:58:32 +0100
 
 freefilesync (4.2-0ubuntu1~ppa1~oneiric1) oneiric; urgency=low
 
