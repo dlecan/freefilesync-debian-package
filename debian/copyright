@@ -1,15 +1,11 @@
-Format-Specification: http://svn.debian.org/wsvn/dep/web/deps/dep5.mdwn?op=file&rev=135
-This package was debianized by Damien Lecan <dev@dlecan.com> on
-Wed, 03 Feb 2010 17:44:57 +0100.
-
-It was downloaded from http://freefilesync.sourceforge.net/
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: FreeFileSync
+Upstream-Contact: ZenJu <zhnmju123@gmx.de>
+Source: http://freefilesync.sourceforge.net/
 
 Files: *
-Copyright:
-    Copyright (C) 2010 ZenJu
-    zhnmju123@gmx.de
+Copyright: 2010, ZenJu <zhnmju123@gmx.de>
 License: GPL-3
-    
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
@@ -22,11 +18,14 @@ License: GPL-3
     .
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+    .
+    On Debian systems, the full text of the GNU General Public
+    License version 3 can be found in the file
+    `/usr/share/common-licenses/GPL-3'.
 
 Files: lib/gtest/*
-Copyright: Copyright 2008, Google Inc.
+Copyright: 2008, Google Inc.
 License: BSD
-
 	Redistribution and use in source and binary forms, with or without
 	modification, are permitted provided that the following conditions are
 	met:
@@ -41,9 +40,22 @@ License: BSD
 	contributors may be used to endorse or promote products derived from
 	this software without specific prior written permission.
 
-The Debian packaging is:
-
-    Copyright (C) 2010 Damien Lecan <dev@dlecan.com>
-
-and is licensed under the GPL version 3, 
-see `/usr/share/common-licenses/GPL-3'.
+Files: debian/*
+Copyright: 2010, Damien Lecan <dev@dlecan.com>
+License: GPL-3
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    .
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    .
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+    .
+    On Debian systems, the full text of the GNU General Public
+    License version 3 can be found in the file
+    `/usr/share/common-licenses/GPL-3'.
