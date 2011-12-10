@@ -1,0 +1,12 @@
+diff -r Makefile Makefile
+4a5
+> DOCSHAREDIR = $(SHAREDIR)/doc/$(APPNAME)
+116a118
+> 	if [ ! -d $(DOCSHAREDIR) ]; then mkdir -p $(DOCSHAREDIR); fi
+124,125d125
+< 	BUILD/Changelog.txt \
+< 	BUILD/License.txt \
+127a128,130
+> 	
+> 	cp BUILD/Changelog.txt $(DOCSHAREDIR)/changelog
+> 	gzip $(DOCSHAREDIR)/changelog
