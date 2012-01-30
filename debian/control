@@ -9,11 +9,11 @@ Homepage: http://freefilesync.sourceforge.net/
 Package: freefilesync
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, xdg-utils
-Description: This program is an Open-Source folder comparison and synchronization tool.
- It's key features:
- * Volume Shadow Copy Service
- * Multiple folder pairs
- * Batch capability
- * Binary comparison
- * Handle conflicts and propagate deletions
- * Optimized performance
+Description: folder comparison and synchronization tool
+ This is a folder comparison and synchronization tool. It is optimized 
+ for highest performance and usability without restricted or overloaded 
+ UI interfaces. 
+ .
+ It's key features: Multiple folder pairs, Batch capability, Binary 
+ comparison, Handle conflicts and propagate deletions, Optimized 
+ performance, Transactional file copy, ...
