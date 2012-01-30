@@ -1,0 +1,11 @@
+== FreeFileSync package for Ubuntu and Debian ==
+
+This is the Debian and Ubuntu packaging project for FreeFileSync (http://freefilesync.sourceforge.net), the popular and cross-plateform files and folders sync tool.
+
+Please report issues with packaging on Launchpad project's page : https://launchpad.net/freefilesync
+Report issues with FreeFileSync itself here : http://freefilesync.sourceforge.net
+
+=== Packaging branches ===
+* "master" branch : Ubuntu package
+* "debian-wheezy" : package for testing purpose on Debian Wheezy
+* "debian-mentor" : packaging effort for uploading FreeFileSync in Debian repositories (see http://mentors.debian.net/package/freefilesync)
