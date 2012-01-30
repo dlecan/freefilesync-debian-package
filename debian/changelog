@@ -1,3 +1,13 @@
+freefilesync (5.0-0ubuntu1~ppa1~oneiric1) oneiric; urgency=low
+
+  * New upstream version : FFS 5.0
+    * New grid control
+    * New tree control
+    * Revised Right to Left layout for Hebrew
+    * Updated translation files
+
+ -- Damien Lecan <dev@dlecan.com>  Mon, 30 Dec 2011 21:53:11 +0100
+
 freefilesync (4.6-0ubuntu1~ppa1~oneiric1) oneiric; urgency=low
 
   * New upstream version : FFS 4.6
