@@ -8,7 +8,7 @@
 
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
-
+export IMGDIR=/tmp/FFS_images
 
 configure: configure-stamp
 
@@ -32,41 +32,41 @@ build-stamp: configure-stamp
 	cd RealtimeSync && $(MAKE)
 	
 	# Extract program icons
-	mkdir debian/256x256
+	mkdir -p $(IMGDIR)/256x256
 	# Do not generate 128x128 image on platform > Lucid, as 'convert' is not able to handle it
 	# See LP : 807013
-	#mkdir debian/128x128
-	mkdir debian/48x48
-	mkdir debian/32x32
-	mkdir debian/16x16
+	#mkdir $(IMGDIR)/128x128
+	mkdir $(IMGDIR)/48x48
+	mkdir $(IMGDIR)/32x32
+	mkdir $(IMGDIR)/16x16
 	
 	# FreeFileSync
-	convert lib/FreeFileSync.ico[0] debian/256x256/freefilesync.png
-	convert lib/FreeFileSync.ico[0] debian/256x256/application-x-freefilesync-ffs.png
+	convert lib/FreeFileSync.ico[0] $(IMGDIR)/256x256/freefilesync.png
+	convert lib/FreeFileSync.ico[0] $(IMGDIR)/256x256/application-x-freefilesync-ffs.png
 	# Do not generate 128x128 image on platform > Lucid, as 'convert' is not able to handle it
 	# See LP : 807013
-	#convert lib/FreeFileSync.ico[1] debian/128x128/freefilesync.png
-	#convert lib/FreeFileSync.ico[1] debian/128x128/application-x-freefilesync-ffs.png
-	convert lib/FreeFileSync.ico[2] debian/48x48/freefilesync.png
-	convert lib/FreeFileSync.ico[2] debian/48x48/application-x-freefilesync-ffs.png
-	convert lib/FreeFileSync.ico[3] debian/32x32/freefilesync.png
-	convert lib/FreeFileSync.ico[3] debian/32x32/application-x-freefilesync-ffs.png
-	convert lib/FreeFileSync.ico[4] debian/16x16/freefilesync.png
-	convert lib/FreeFileSync.ico[4] debian/16x16/application-x-freefilesync-ffs.png
+	#convert lib/FreeFileSync.ico[1] $(IMGDIR)/128x128/freefilesync.png
+	#convert lib/FreeFileSync.ico[1] $(IMGDIR)/128x128/application-x-freefilesync-ffs.png
+	convert lib/FreeFileSync.ico[2] $(IMGDIR)/48x48/freefilesync.png
+	convert lib/FreeFileSync.ico[2] $(IMGDIR)/48x48/application-x-freefilesync-ffs.png
+	convert lib/FreeFileSync.ico[3] $(IMGDIR)/32x32/freefilesync.png
+	convert lib/FreeFileSync.ico[3] $(IMGDIR)/32x32/application-x-freefilesync-ffs.png
+	convert lib/FreeFileSync.ico[4] $(IMGDIR)/16x16/freefilesync.png
+	convert lib/FreeFileSync.ico[4] $(IMGDIR)/16x16/application-x-freefilesync-ffs.png
 	
 	# RealTimeSync
-	convert RealtimeSync/RealtimeSync.ico[0] debian/256x256/realtimesync.png
-	convert RealtimeSync/RealtimeSync.ico[0] debian/256x256/application-x-freefilesync-real.png
+	convert RealtimeSync/RealtimeSync.ico[0] $(IMGDIR)/256x256/realtimesync.png
+	convert RealtimeSync/RealtimeSync.ico[0] $(IMGDIR)/256x256/application-x-freefilesync-real.png
 	# Do not generate 128x128 image on platform > Lucid, as 'convert' is not able to handle it
 	# See LP : 807013
-	#convert RealtimeSync/RealtimeSync.ico[1] debian/128x128/realtimesync.png
-	#convert RealtimeSync/RealtimeSync.ico[1] debian/128x128/application-x-freefilesync-real.png
-	convert RealtimeSync/RealtimeSync.ico[2] debian/48x48/realtimesync.png
-	convert RealtimeSync/RealtimeSync.ico[2] debian/48x48/application-x-freefilesync-real.png
-	convert RealtimeSync/RealtimeSync.ico[3] debian/32x32/realtimesync.png
-	convert RealtimeSync/RealtimeSync.ico[3] debian/32x32/application-x-freefilesync-real.png
-	convert RealtimeSync/RealtimeSync.ico[3] debian/16x16/realtimesync.png
-	convert RealtimeSync/RealtimeSync.ico[3] debian/16x16/application-x-freefilesync-real.png
+	#convert RealtimeSync/RealtimeSync.ico[1] $(IMGDIR)/128x128/realtimesync.png
+	#convert RealtimeSync/RealtimeSync.ico[1] $(IMGDIR)/128x128/application-x-freefilesync-real.png
+	convert RealtimeSync/RealtimeSync.ico[2] $(IMGDIR)/48x48/realtimesync.png
+	convert RealtimeSync/RealtimeSync.ico[2] $(IMGDIR)/48x48/application-x-freefilesync-real.png
+	convert RealtimeSync/RealtimeSync.ico[3] $(IMGDIR)/32x32/realtimesync.png
+	convert RealtimeSync/RealtimeSync.ico[3] $(IMGDIR)/32x32/application-x-freefilesync-real.png
+	convert RealtimeSync/RealtimeSync.ico[3] $(IMGDIR)/16x16/realtimesync.png
+	convert RealtimeSync/RealtimeSync.ico[3] $(IMGDIR)/16x16/application-x-freefilesync-real.png
 	
 	# Build desktop files
 	intltool-merge debian/po/freefilesync -d -u -c debian/po/.intltool-merge-cache debian/freefilesync.desktop.in debian/freefilesync.desktop
@@ -84,6 +84,9 @@ clean:
 	# Add here commands to clean up after the build process.
 	$(MAKE) clean
 	cd RealtimeSync && $(MAKE) clean
+	
+	# Clean temporary images directory
+	rm -rf $(IMGDIR)
 
 	dh_clean 
 
