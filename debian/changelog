@@ -1,3 +1,9 @@
+freefilesync TODO
+
+  * Images are no more generated in debian/ directory
+
+ -- Damien Lecan <dev@dlecan.com>  TODO
+ 
 freefilesync (5.0.1-0ubuntu1~ppa1~oneiric1) oneiric; urgency=low
 
   * New upstream version : FFS 5.0.1
