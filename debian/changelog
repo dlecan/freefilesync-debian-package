@@ -1,3 +1,9 @@
+freefilesync (5.0.1-0ubuntu1~ppa3~oneiric1) oneiric; urgency=low
+
+  * Fix bug with mkdir use
+
+ -- Damien Lecan <dev@dlecan.com>  Mon, 02 Feb 2012 09:51:06 +0100
+
 freefilesync (5.0.1-0ubuntu1~ppa2~oneiric1) oneiric; urgency=low
 
   * Images are no more generated in debian/ directory
