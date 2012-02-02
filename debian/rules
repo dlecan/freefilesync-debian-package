@@ -37,14 +37,14 @@ build-stamp: configure-stamp
 	mkdir -p $(IMGDIR)/256x256/mimetypes
 	# Do not generate 128x128 image on platform > Lucid, as 'convert' is not able to handle it
 	# See LP : 807013
-	#mkdir $(IMGDIR)/128x128/apps
-	#mkdir $(IMGDIR)/128x128/mimetypes
-	mkdir $(IMGDIR)/48x48/apps
-	mkdir $(IMGDIR)/48x48/mimetypes
-	mkdir $(IMGDIR)/32x32/apps
-	mkdir $(IMGDIR)/32x32/mimetypes
-	mkdir $(IMGDIR)/16x16/apps
-	mkdir $(IMGDIR)/16x16/mimetypes
+	#mkdir -p $(IMGDIR)/128x128/apps
+	#mkdir -p $(IMGDIR)/128x128/mimetypes
+	mkdir -p $(IMGDIR)/48x48/apps
+	mkdir -p  $(IMGDIR)/48x48/mimetypes
+	mkdir -p $(IMGDIR)/32x32/apps
+	mkdir -p $(IMGDIR)/32x32/mimetypes
+	mkdir -p $(IMGDIR)/16x16/apps
+	mkdir -p $(IMGDIR)/16x16/mimetypes
 	
 	# FreeFileSync
 	convert lib/FreeFileSync.ico[0] $(IMGDIR)/256x256/apps/freefilesync.png
