@@ -1,3 +1,9 @@
+freefilesync (5.0.1-0ubuntu1~ppa4~oneiric1) oneiric; urgency=low
+
+  * Add missing mkdir
+
+ -- Damien Lecan <dev@dlecan.com>  Mon, 02 Feb 2012 22:04:01 +0100
+
 freefilesync (5.0.1-0ubuntu1~ppa3~oneiric1) oneiric; urgency=low
 
   * Fix bug with mkdir use
