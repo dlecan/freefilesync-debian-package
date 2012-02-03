@@ -78,8 +78,6 @@ build-stamp: configure-stamp
 	mkdir -p $(DEBTMP)/usr/share/applications
 	intltool-merge debian/po/freefilesync -d -u -c debian/po/.intltool-merge-cache debian/freefilesync.desktop.in $(DEBTMP)/usr/share/applications/freefilesync.desktop
 	intltool-merge debian/po/freefilesync -d -u -c debian/po/.intltool-merge-cache debian/realtimesync.desktop.in $(DEBTMP)/usr/share/applications/realtimesync.desktop
-		
-	#docbook-to-man debian/freefilesync.sgml > freefilesync.1
 
 	touch $@
 
