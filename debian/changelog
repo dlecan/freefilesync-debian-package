@@ -1,3 +1,9 @@
+freefilesync (5.0.1-0ubuntu1~ppa5~oneiric1) oneiric; urgency=low
+
+  * Fix intltool-merge issue
+
+ -- Damien Lecan <dev@dlecan.com>  Mon, 02 Feb 2012 11:56:37 +0100
+
 freefilesync (5.0.1-0ubuntu1~ppa4~oneiric1) oneiric; urgency=low
 
   * Add missing mkdir
