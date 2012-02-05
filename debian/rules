@@ -120,7 +120,9 @@ binary-arch: install
 	
 	# To copy images and .desktop file
 	# Relative to debian/tmp
-	dh_install
+	pwd
+	ls -alR debian
+	dh_install --sourcedir=debian/tmp
 #	dh_installmenu
 #	dh_installdebconf
 #	dh_installlogrotate

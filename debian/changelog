@@ -1,3 +1,15 @@
+freefilesync (5.0.1-0ubuntu1~ppa6~oneiric1~exp1) oneiric; urgency=low
+
+  * Try again to fix build error
+
+ -- Damien Lecan <dev@dlecan.com>  Mon, 05 Feb 2012 16:32:47 +0100
+
+freefilesync (5.0.1-0ubuntu1~ppa6~oneiric1) oneiric; urgency=low
+
+  * Fix build error
+
+ -- Damien Lecan <dev@dlecan.com>  Mon, 04 Feb 2012 15:12:02 +0100
+
 freefilesync (5.0.1-0ubuntu1~ppa5~oneiric1) oneiric; urgency=low
 
   * Fix intltool-merge issue
