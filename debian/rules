@@ -10,8 +10,8 @@
 export DH_VERBOSE=1
 export DH_OPTIONS=-v
 
-export DESTDEBDIR=$(CURDIR)/debian/tmp
-export IMGDIR=$(DESTDEBDIR)/usr/share/icons/hicolor
+export DESTRESDIR=$(CURDIR)/debian/tmp
+export IMGDIR=$(DESTRESDIR)/usr/share/icons/hicolor
 
 %:
         dh $@
@@ -71,6 +71,6 @@ override_dh_auto_install:
 	convert RealtimeSync/RealtimeSync.ico[3] $(IMGDIR)/16x16/mimetypes/application-x-freefilesync-real.png
 	
 	# Build desktop files
-	mkdir -p $(DESTDEBDIR)/usr/share/applications
-	intltool-merge debian/po/freefilesync -d -u -c debian/po/.intltool-merge-cache debian/freefilesync.desktop.in $(DESTDEBDIR)/usr/share/applications/freefilesync.desktop
-	intltool-merge debian/po/freefilesync -d -u -c debian/po/.intltool-merge-cache debian/realtimesync.desktop.in $(DESTDEBDIR)/usr/share/applications/realtimesync.desktop
+	mkdir -p $(DESTRESDIR)/usr/share/applications
+	intltool-merge debian/po/freefilesync -d -u -c debian/po/.intltool-merge-cache debian/freefilesync.desktop.in $(DESTRESDIR)/usr/share/applications/freefilesync.desktop
+	intltool-merge debian/po/freefilesync -d -u -c debian/po/.intltool-merge-cache debian/realtimesync.desktop.in $(DESTRESDIR)/usr/share/applications/realtimesync.desktop
