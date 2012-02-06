@@ -14,21 +14,21 @@ export DESTRESDIR=$(CURDIR)/debian/tmp
 export IMGDIR=$(DESTRESDIR)/usr/share/icons/hicolor
 
 %:
-        dh $@
+	dh $@
 
 override_dh_auto_clean:
-    dh_auto_clean
-    dh_auto_clean --sourcedirectory=RealtimeSync
+	dh_auto_clean
+	dh_auto_clean --sourcedirectory=RealtimeSync
 
 override_dh_auto_build:
-    dh_auto_build
-    dh_auto_build --sourcedirectory=RealtimeSync
-    
+	dh_auto_build
+	dh_auto_build --sourcedirectory=RealtimeSync
+	
 override_dh_auto_install:
-    dh_auto_install
+	dh_auto_install
 	dh_auto_install --sourcedirectory=RealtimeSync
-    
-    # Extract program icons
+	
+	# Extract program icons
 	mkdir -p $(IMGDIR)/256x256/apps
 	mkdir -p $(IMGDIR)/256x256/mimetypes
 	# Do not generate 128x128 image on platform > Lucid, as 'convert' is not able to handle it
