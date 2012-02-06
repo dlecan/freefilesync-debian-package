@@ -107,11 +107,11 @@ install: build
 
 	# To copy images and .desktop file
 	# Relative to debian/tmp
-    dh_install    
+	dh_install
 
 #  Build architecture-independent files here.
 binary-indep: build install
-    # We have nothing to do by default.
+	# We have nothing to do by default.
 
 # Build architecture-dependent files here.
 binary-arch: install
