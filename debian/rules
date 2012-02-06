@@ -8,7 +8,7 @@
 
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
-export DEBTMP=debian/tmp
+export DEBTMP=$(CURDIR)/debian/tmp
 export IMGDIR=$(DEBTMP)/usr/share/icons/hicolor
 
 configure: configure-stamp
@@ -57,11 +57,8 @@ install: build
 	# Add here commands to install the package into debian/freefilesync.
 	$(MAKE) DESTDIR=$(CURDIR)/debian/freefilesync install
 	cd RealtimeSync && $(MAKE) DESTDIR=$(CURDIR)/debian/freefilesync install
-
-# Build architecture-independent files here.
-binary-indep: install
-	
-	# Extract program icons
+    
+    # Extract program icons
 	mkdir -p $(IMGDIR)/256x256/apps
 	mkdir -p $(IMGDIR)/256x256/mimetypes
 	# Do not generate 128x128 image on platform > Lucid, as 'convert' is not able to handle it
@@ -110,7 +107,11 @@ binary-indep: install
 
 	# To copy images and .desktop file
 	# Relative to debian/tmp
-    dh_install
+    dh_install    
+
+#  Build architecture-independent files here.
+binary-indep: build install
+    # We have nothing to do by default.
 
 # Build architecture-dependent files here.
 binary-arch: install
@@ -119,24 +120,12 @@ binary-arch: install
 	dh_installchangelogs 
 	dh_installdocs
 	dh_installexamples
-#   dh_install
-#	dh_installmenu
-#	dh_installdebconf
-#	dh_installlogrotate
-#	dh_installemacsen
-#	dh_installpam
 	dh_installmime
-#	dh_python
-#	dh_installinit
-#	dh_installcron
-#	dh_installinfo
 	dh_installman
 	dh_link
 	dh_strip
 	dh_compress
 	dh_fixperms
-#	dh_perl
-#	dh_makeshlibs
 	dh_installdeb
 	dh_shlibdeps
 	dh_gencontrol
