@@ -31,6 +31,35 @@ build-stamp: configure-stamp
 	# Add here commands to compile the package.
 	$(MAKE)
 	cd RealtimeSync && $(MAKE)
+
+	touch $@
+
+clean: 
+	dh_testdir
+	dh_testroot
+	rm -f build-stamp configure-stamp
+
+	# Add here commands to clean up after the build process.
+	$(MAKE) clean
+	cd RealtimeSync && $(MAKE) clean
+	
+	# Clean temporary directory
+	rm -rf $(DEBTMP)
+
+	dh_clean 
+
+install: build
+	dh_testdir
+	dh_testroot
+	dh_prep  
+	dh_installdirs
+
+	# Add here commands to install the package into debian/freefilesync.
+	$(MAKE) DESTDIR=$(CURDIR)/debian/freefilesync install
+	cd RealtimeSync && $(MAKE) DESTDIR=$(CURDIR)/debian/freefilesync install
+
+# Build architecture-independent files here.
+binary-indep: install
 	
 	# Extract program icons
 	mkdir -p $(IMGDIR)/256x256/apps
@@ -79,36 +108,9 @@ build-stamp: configure-stamp
 	intltool-merge debian/po/freefilesync -d -u -c debian/po/.intltool-merge-cache debian/freefilesync.desktop.in $(DEBTMP)/usr/share/applications/freefilesync.desktop
 	intltool-merge debian/po/freefilesync -d -u -c debian/po/.intltool-merge-cache debian/realtimesync.desktop.in $(DEBTMP)/usr/share/applications/realtimesync.desktop
 
-	touch $@
-
-clean: 
-	dh_testdir
-	dh_testroot
-	rm -f build-stamp configure-stamp
-
-	# Add here commands to clean up after the build process.
-	$(MAKE) clean
-	cd RealtimeSync && $(MAKE) clean
-	
-	# Clean temporary directory
-	rm -rf $(DEBTMP)
-
-	dh_clean 
-
-install: build
-	dh_testdir
-	dh_testroot
-	dh_prep  
-	dh_installdirs
-
-	# Add here commands to install the package into debian/freefilesync.
-	$(MAKE) DESTDIR=$(CURDIR)/debian/freefilesync install
-	cd RealtimeSync && $(MAKE) DESTDIR=$(CURDIR)/debian/freefilesync install
-
-
-# Build architecture-independent files here.
-binary-indep: install
-# We have nothing to do by default.
+	# To copy images and .desktop file
+	# Relative to debian/tmp
+    dh_install
 
 # Build architecture-dependent files here.
 binary-arch: install
@@ -117,12 +119,7 @@ binary-arch: install
 	dh_installchangelogs 
 	dh_installdocs
 	dh_installexamples
-	
-	# To copy images and .desktop file
-	# Relative to debian/tmp
-	pwd
-	ls -alR debian
-	dh_install --sourcedir=debian/tmp
+#   dh_install
 #	dh_installmenu
 #	dh_installdebconf
 #	dh_installlogrotate
