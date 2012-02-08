@@ -2,18 +2,32 @@ Source: freefilesync
 Section: utils
 Priority: optional
 Maintainer: Damien Lecan <dev@dlecan.com>
-Build-Depends: debhelper (>= 7.0.50~), autotools-dev, libwxgtk2.8-dev, libgtkmm-2.4-dev, imagemagick, intltool, libboost-thread-dev (>= 1.46), gcc (>= 4:4.5)
+Build-Depends: debhelper (>= 8),
+               autotools-dev,
+               libwxgtk2.8-dev,
+               libgtkmm-2.4-dev,
+               imagemagick,
+               intltool,
+               libboost-thread-dev (>= 1.46),
+               gcc (>= 4:4.5)
 Standards-Version: 3.9.2
 Homepage: http://freefilesync.sourceforge.net/
 
 Package: freefilesync
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, xdg-utils
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         xdg-utils
 Description: folder comparison and synchronization tool
  This is a folder comparison and synchronization tool. It is optimized 
  for highest performance and usability without restricted or overloaded 
  UI interfaces. 
  .
- It's key features: Multiple folder pairs, Batch capability, Binary 
- comparison, Handle conflicts and propagate deletions, Optimized 
- performance, Transactional file copy, ...
+ Features:
+  * Multiple folder pairs
+  * Batch capability
+  * Binary comparison
+  * Handle conflicts and propagate deletions
+  * Optimized performance
+  * Transactional file copy
+  * ...
