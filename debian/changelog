@@ -59,7 +59,7 @@ freefilesync (4.3-0ubuntu1~ppa3~oneiric1) oneiric; urgency=low
     * Add man pages
     * Update description
     * Remove useless resources
-     
+
  -- Damien Lecan <dev@dlecan.com>  Mon, 12 Dec 2011 22:25:13 +0100
 
 freefilesync (4.3-3) unstable; urgency=low
@@ -71,7 +71,7 @@ freefilesync (4.3-3) unstable; urgency=low
 freefilesync (4.3-0ubuntu1~ppa2~oneiric1) oneiric; urgency=low
 
   * Fix lintian warnings
-     
+
  -- Damien Lecan <dev@dlecan.com>  Mon, 23 Nov 2011 21:49:17 +0100
 
 freefilesync (4.3-0ubuntu1~ppa1~oneiric1) oneiric; urgency=low
@@ -86,7 +86,7 @@ freefilesync (4.3-0ubuntu1~ppa1~oneiric1) oneiric; urgency=low
     * RealtimeSync: Fixed support for manual volume unmount (Windows)
     * Added Croatian language
     * Updated translation files
-     
+
  -- Damien Lecan <dev@dlecan.com>  Mon, 21 Nov 2011 22:12:21 +0100
 
 freefilesync (4.2-2) unstable; urgency=low
@@ -104,13 +104,13 @@ freefilesync (4.2-1) unstable; urgency=low
 freefilesync (4.2-0ubuntu1~ppa3~oneiric1) oneiric; urgency=low
 
   * Clean-up : licenses and dependencies
-        
+
  -- Damien Lecan <dev@dlecan.com>  Sun, 13 Nov 2011 15:10:22 +0100
 
 freefilesync (4.2-0ubuntu1~ppa2~oneiric1) oneiric; urgency=low
 
   * "library" folder has been renamed "lib"
-        
+
  -- Damien Lecan <dev@dlecan.com>  Thu, 05 Nov 2011 15:05:42 +0100
 
 freefilesync (4.2-0ubuntu1~ppa1~oneiric1) oneiric; urgency=low
@@ -138,7 +138,7 @@ freefilesync (4.2-0ubuntu1~ppa1~oneiric1) oneiric; urgency=low
     * Fixed incorrect directory name loading when using multiple folder pairs
     * Allow passing multiple configurations via command line
     * Allow passing multiple directory names via command line
-        
+
  -- Damien Lecan <dev@dlecan.com>  Thu, 03 Nov 2011 21:45:45 +0100
 
 freefilesync (4.0-0ubuntu1~ppa1~oneiric1) oneiric; urgency=low
@@ -173,7 +173,7 @@ freefilesync (4.0-0ubuntu1~ppa1~oneiric1) oneiric; urgency=low
     * Plenty of GUI improvements
     * Updated help file
     * Updated translation files
-        
+
  -- Damien Lecan <dev@dlecan.com>  Sat, 01 Oct 2011 21:47:10 +0100
 
 freefilesync (3.21-0ubuntu1~ppa1) natty; urgency=low
@@ -466,7 +466,6 @@ freefilesync (3.4rc2-0ubuntu1~ppa12) karmic; urgency=low
     - improve icon management
 
  -- Damien Lecan <dev@dlecan.com>  Thu, 11 Feb 2010 14:41:19 +0100
-
 
 freefilesync (3.4rc1-0ubuntu1~ppa11) karmic; urgency=low
 
