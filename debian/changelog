@@ -1,3 +1,19 @@
+freefilesync (5.0.1-4) unstable; urgency=low
+
+  * New package: freefilesync. Closes: #648610
+        
+ -- Damien Lecan <dev@dlecan.com>  Mon, 08 Feb 2012 11:36:26 +0100
+
+freefilesync (5.0.1-4-0ubuntu1~ppa) oneiric; urgency=low
+
+  * Full "rules" file rewrite
+  * Better manpages installation
+  * Remove lintian warning about debhelper version
+  * Remove lintian warning about SF redirector
+  * Images are no more generated in debian/ directory
+
+ -- Damien Lecan <dev@dlecan.com>  Mon, 08 Feb 2012 10:50:58 +0100
+ 
 freefilesync (5.0.1-0ubuntu1~ppa1~oneiric1) oneiric; urgency=low
 
   * New upstream version : FFS 5.0.1
@@ -46,7 +62,7 @@ freefilesync (4.3-0ubuntu1~ppa3~oneiric1) oneiric; urgency=low
      
  -- Damien Lecan <dev@dlecan.com>  Mon, 12 Dec 2011 22:25:13 +0100
 
- freefilesync (4.3-3) unstable; urgency=low
+freefilesync (4.3-3) unstable; urgency=low
 
   * Closes: #648610
         

@@ -6,6 +6,7 @@ Please report issues with packaging on Launchpad project's page : https://launch
 Report issues with FreeFileSync itself here : http://freefilesync.sourceforge.net
 
 === Packaging branches ===
-* "master" branch : Ubuntu package
-* "debian-wheezy" : package for testing purpose on Debian Wheezy
-* "debian-mentor" : packaging effort for uploading FreeFileSync in Debian repositories (see http://mentors.debian.net/package/freefilesync)
+* "master" branch : Useless
+* "ubuntu" branch : package for Ubuntu Oneiric
+* "ubuntu-precise" branch : package for Ubuntu Precise
+* "debian-unstable" : package for Debian Unstable

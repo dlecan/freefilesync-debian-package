@@ -8,132 +8,69 @@
 
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
+#export DH_OPTIONS=-v
 
+export DESTRESDIR=$(CURDIR)/debian/tmp
+export IMGDIR=$(DESTRESDIR)/usr/share/icons/hicolor
 
-configure: configure-stamp
+%:
+	dh $@
 
-configure-stamp:
-	dh_testdir
-	# Add here commands to configure the package.
+override_dh_auto_clean:
+	dh_auto_clean
+	dh_auto_clean --sourcedirectory=RealtimeSync
 
-	touch configure-stamp
-
-build: build-arch build-indep
-
-build-arch: build-stamp
-
-build-indep: build-stamp
-
-build-stamp: configure-stamp  
-	dh_testdir
-
-	# Add here commands to compile the package.
-	$(MAKE)
-	cd RealtimeSync && $(MAKE)
+override_dh_auto_build:
+	dh_auto_build
+	dh_auto_build --sourcedirectory=RealtimeSync
+	
+override_dh_auto_install:
+	dh_auto_install
+	dh_auto_install --sourcedirectory=RealtimeSync
 	
 	# Extract program icons
-	mkdir debian/256x256
+	mkdir -p $(IMGDIR)/256x256/apps
+	mkdir -p $(IMGDIR)/256x256/mimetypes
 	# Do not generate 128x128 image on platform > Lucid, as 'convert' is not able to handle it
 	# See LP : 807013
-	#mkdir debian/128x128
-	mkdir debian/48x48
-	mkdir debian/32x32
-	mkdir debian/16x16
+	#mkdir -p $(IMGDIR)/128x128/apps
+	#mkdir -p $(IMGDIR)/128x128/mimetypes
+	mkdir -p $(IMGDIR)/48x48/apps
+	mkdir -p $(IMGDIR)/48x48/mimetypes
+	mkdir -p $(IMGDIR)/32x32/apps
+	mkdir -p $(IMGDIR)/32x32/mimetypes
+	mkdir -p $(IMGDIR)/16x16/apps
+	mkdir -p $(IMGDIR)/16x16/mimetypes
 	
 	# FreeFileSync
-	convert lib/FreeFileSync.ico[0] debian/256x256/freefilesync.png
-	convert lib/FreeFileSync.ico[0] debian/256x256/application-x-freefilesync-ffs.png
+	convert lib/FreeFileSync.ico[0] $(IMGDIR)/256x256/apps/freefilesync.png
+	convert lib/FreeFileSync.ico[0] $(IMGDIR)/256x256/mimetypes/application-x-freefilesync-ffs.png
 	# Do not generate 128x128 image on platform > Lucid, as 'convert' is not able to handle it
 	# See LP : 807013
-	#convert lib/FreeFileSync.ico[1] debian/128x128/freefilesync.png
-	#convert lib/FreeFileSync.ico[1] debian/128x128/application-x-freefilesync-ffs.png
-	convert lib/FreeFileSync.ico[2] debian/48x48/freefilesync.png
-	convert lib/FreeFileSync.ico[2] debian/48x48/application-x-freefilesync-ffs.png
-	convert lib/FreeFileSync.ico[3] debian/32x32/freefilesync.png
-	convert lib/FreeFileSync.ico[3] debian/32x32/application-x-freefilesync-ffs.png
-	convert lib/FreeFileSync.ico[4] debian/16x16/freefilesync.png
-	convert lib/FreeFileSync.ico[4] debian/16x16/application-x-freefilesync-ffs.png
+	#convert lib/FreeFileSync.ico[1] $(IMGDIR)/128x128/apps/freefilesync.png
+	#convert lib/FreeFileSync.ico[1] $(IMGDIR)/128x128/mimetypes/application-x-freefilesync-ffs.png
+	convert lib/FreeFileSync.ico[2] $(IMGDIR)/48x48/apps/freefilesync.png
+	convert lib/FreeFileSync.ico[2] $(IMGDIR)/48x48/mimetypes/application-x-freefilesync-ffs.png
+	convert lib/FreeFileSync.ico[3] $(IMGDIR)/32x32/apps/freefilesync.png
+	convert lib/FreeFileSync.ico[3] $(IMGDIR)/32x32/mimetypes/application-x-freefilesync-ffs.png
+	convert lib/FreeFileSync.ico[4] $(IMGDIR)/16x16/apps/freefilesync.png
+	convert lib/FreeFileSync.ico[4] $(IMGDIR)/16x16/mimetypes/application-x-freefilesync-ffs.png
 	
 	# RealTimeSync
-	convert RealtimeSync/RealtimeSync.ico[0] debian/256x256/realtimesync.png
-	convert RealtimeSync/RealtimeSync.ico[0] debian/256x256/application-x-freefilesync-real.png
+	convert RealtimeSync/RealtimeSync.ico[0] $(IMGDIR)/256x256/apps/realtimesync.png
+	convert RealtimeSync/RealtimeSync.ico[0] $(IMGDIR)/256x256/mimetypes/application-x-freefilesync-real.png
 	# Do not generate 128x128 image on platform > Lucid, as 'convert' is not able to handle it
 	# See LP : 807013
-	#convert RealtimeSync/RealtimeSync.ico[1] debian/128x128/realtimesync.png
-	#convert RealtimeSync/RealtimeSync.ico[1] debian/128x128/application-x-freefilesync-real.png
-	convert RealtimeSync/RealtimeSync.ico[2] debian/48x48/realtimesync.png
-	convert RealtimeSync/RealtimeSync.ico[2] debian/48x48/application-x-freefilesync-real.png
-	convert RealtimeSync/RealtimeSync.ico[3] debian/32x32/realtimesync.png
-	convert RealtimeSync/RealtimeSync.ico[3] debian/32x32/application-x-freefilesync-real.png
-	convert RealtimeSync/RealtimeSync.ico[3] debian/16x16/realtimesync.png
-	convert RealtimeSync/RealtimeSync.ico[3] debian/16x16/application-x-freefilesync-real.png
+	#convert RealtimeSync/RealtimeSync.ico[1] $(IMGDIR)/128x128/apps/realtimesync.png
+	#convert RealtimeSync/RealtimeSync.ico[1] $(IMGDIR)/128x128/mimetypes/application-x-freefilesync-real.png
+	convert RealtimeSync/RealtimeSync.ico[2] $(IMGDIR)/48x48/apps/realtimesync.png
+	convert RealtimeSync/RealtimeSync.ico[2] $(IMGDIR)/48x48/mimetypes/application-x-freefilesync-real.png
+	convert RealtimeSync/RealtimeSync.ico[3] $(IMGDIR)/32x32/apps/realtimesync.png
+	convert RealtimeSync/RealtimeSync.ico[3] $(IMGDIR)/32x32/mimetypes/application-x-freefilesync-real.png
+	convert RealtimeSync/RealtimeSync.ico[3] $(IMGDIR)/16x16/apps/realtimesync.png
+	convert RealtimeSync/RealtimeSync.ico[3] $(IMGDIR)/16x16/mimetypes/application-x-freefilesync-real.png
 	
 	# Build desktop files
-	intltool-merge debian/po/freefilesync -d -u -c debian/po/.intltool-merge-cache debian/freefilesync.desktop.in debian/freefilesync.desktop
-	intltool-merge debian/po/freefilesync -d -u -c debian/po/.intltool-merge-cache debian/realtimesync.desktop.in debian/realtimesync.desktop
-		
-	#docbook-to-man debian/freefilesync.sgml > freefilesync.1
-
-	touch $@
-
-clean: 
-	dh_testdir
-	dh_testroot
-	rm -f build-stamp configure-stamp
-
-	# Add here commands to clean up after the build process.
-	$(MAKE) clean
-	cd RealtimeSync && $(MAKE) clean
-
-	dh_clean 
-
-install: build
-	dh_testdir
-	dh_testroot
-	dh_prep  
-	dh_installdirs
-
-	# Add here commands to install the package into debian/freefilesync.
-	$(MAKE) DESTDIR=$(CURDIR)/debian/freefilesync install
-	cd RealtimeSync && $(MAKE) DESTDIR=$(CURDIR)/debian/freefilesync install
-
-
-# Build architecture-independent files here.
-binary-indep: install
-# We have nothing to do by default.
-
-# Build architecture-dependent files here.
-binary-arch: install
-	dh_testdir
-	dh_testroot
-	dh_installchangelogs 
-	dh_installdocs
-	dh_installexamples
-	
-	# To copy images and .desktop file
-	dh_install --sourcedir=debian
-#	dh_installmenu
-#	dh_installdebconf
-#	dh_installlogrotate
-#	dh_installemacsen
-#	dh_installpam
-	dh_installmime
-#	dh_python
-#	dh_installinit
-#	dh_installcron
-#	dh_installinfo
-	dh_installman
-	dh_link
-	dh_strip
-	dh_compress
-	dh_fixperms
-#	dh_perl
-#	dh_makeshlibs
-	dh_installdeb
-	dh_shlibdeps
-	dh_gencontrol
-	dh_md5sums
-	dh_builddeb
-
-binary: binary-indep binary-arch
-.PHONY: build clean binary-indep binary-arch binary install configure
+	mkdir -p $(DESTRESDIR)/usr/share/applications
+	intltool-merge debian/po/freefilesync -d -u -c debian/po/.intltool-merge-cache debian/freefilesync.desktop.in $(DESTRESDIR)/usr/share/applications/freefilesync.desktop
+	intltool-merge debian/po/freefilesync -d -u -c debian/po/.intltool-merge-cache debian/realtimesync.desktop.in $(DESTRESDIR)/usr/share/applications/realtimesync.desktop
