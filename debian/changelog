@@ -1,10 +1,10 @@
-freefilesync (5.0.1-4) unstable; urgency=low
+freefilesync (5.0.1-1) unstable; urgency=low
 
   * New package: freefilesync. Closes: #648610
 
  -- Damien Lecan <dev@dlecan.com>  Mon, 08 Feb 2012 11:36:26 +0100
 
-freefilesync (5.0.1-4-0ubuntu1~ppa) oneiric; urgency=low
+freefilesync (5.0.1-1-0ubuntu1~ppa) oneiric; urgency=low
 
   * Full "rules" file rewrite
   * Better manpages installation
