@@ -1,4 +1,4 @@
-freefilesync (5.0.1-4-0ubuntu1~ppa) oneiric; urgency=low
+freefilesync (5.0.1-1-0ubuntu1~ppa) oneiric; urgency=low
 
   * Full "rules" file rewrite
   * Better manpages installation
