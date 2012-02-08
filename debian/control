@@ -9,8 +9,8 @@ Build-Depends: debhelper (>= 8),
                imagemagick,
                intltool,
                libboost-thread-dev (>= 1.46),
-               gcc (>= 4:4.5),
-               libunity-dev
+               libunity-dev,
+               gcc (>= 4:4.5)
 Standards-Version: 3.9.2
 Homepage: http://freefilesync.sourceforge.net/
 
