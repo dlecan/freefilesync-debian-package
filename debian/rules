@@ -7,58 +7,28 @@
 # This special exception was added by Craig Small in version 0.37 of dh-make.
 
 # Uncomment this to turn on verbose mode.
-#export DH_VERBOSE=1
-export DEBTMP=$(CURDIR)/debian/tmp
-export IMGDIR=$(DEBTMP)/usr/share/icons/hicolor
+export DH_VERBOSE=1
+export DH_OPTIONS=-v
 
-configure: configure-stamp
+export DESTRESDIR=$(CURDIR)/debian/tmp
+export IMGDIR=$(DESTRESDIR)/usr/share/icons/hicolor
 
-configure-stamp:
-	dh_testdir
-	# Add here commands to configure the package.
+%:
+	dh $@
 
-	touch configure-stamp
+override_dh_auto_clean:
+	dh_auto_clean
+	dh_auto_clean --sourcedirectory=RealtimeSync
 
-build: build-arch build-indep
-
-build-arch: build-stamp
-
-build-indep: build-stamp
-
-build-stamp: configure-stamp  
-	dh_testdir
-
-	# Add here commands to compile the package.
-	$(MAKE)
-	cd RealtimeSync && $(MAKE)
-
-	touch $@
-
-clean: 
-	dh_testdir
-	dh_testroot
-	rm -f build-stamp configure-stamp
-
-	# Add here commands to clean up after the build process.
-	$(MAKE) clean
-	cd RealtimeSync && $(MAKE) clean
+override_dh_auto_build:
+	dh_auto_build
+	dh_auto_build --sourcedirectory=RealtimeSync
 	
-	# Clean temporary directory
-	rm -rf $(DEBTMP)
-
-	dh_clean 
-
-install: build
-	dh_testdir
-	dh_testroot
-	dh_prep  
-	dh_installdirs
-
-	# Add here commands to install the package into debian/freefilesync.
-	$(MAKE) DESTDIR=$(CURDIR)/debian/freefilesync install
-	cd RealtimeSync && $(MAKE) DESTDIR=$(CURDIR)/debian/freefilesync install
-    
-    # Extract program icons
+override_dh_auto_install:
+	dh_auto_install
+	dh_auto_install --sourcedirectory=RealtimeSync
+	
+	# Extract program icons
 	mkdir -p $(IMGDIR)/256x256/apps
 	mkdir -p $(IMGDIR)/256x256/mimetypes
 	# Do not generate 128x128 image on platform > Lucid, as 'convert' is not able to handle it
@@ -66,7 +36,7 @@ install: build
 	#mkdir -p $(IMGDIR)/128x128/apps
 	#mkdir -p $(IMGDIR)/128x128/mimetypes
 	mkdir -p $(IMGDIR)/48x48/apps
-	mkdir -p  $(IMGDIR)/48x48/mimetypes
+	mkdir -p $(IMGDIR)/48x48/mimetypes
 	mkdir -p $(IMGDIR)/32x32/apps
 	mkdir -p $(IMGDIR)/32x32/mimetypes
 	mkdir -p $(IMGDIR)/16x16/apps
@@ -101,36 +71,6 @@ install: build
 	convert RealtimeSync/RealtimeSync.ico[3] $(IMGDIR)/16x16/mimetypes/application-x-freefilesync-real.png
 	
 	# Build desktop files
-	mkdir -p $(DEBTMP)/usr/share/applications
-	intltool-merge debian/po/freefilesync -d -u -c debian/po/.intltool-merge-cache debian/freefilesync.desktop.in $(DEBTMP)/usr/share/applications/freefilesync.desktop
-	intltool-merge debian/po/freefilesync -d -u -c debian/po/.intltool-merge-cache debian/realtimesync.desktop.in $(DEBTMP)/usr/share/applications/realtimesync.desktop
-
-	# To copy images and .desktop file
-	# Relative to debian/tmp
-	dh_install
-
-#  Build architecture-independent files here.
-binary-indep: build install
-	# We have nothing to do by default.
-
-# Build architecture-dependent files here.
-binary-arch: install
-	dh_testdir
-	dh_testroot
-	dh_installchangelogs 
-	dh_installdocs
-	dh_installexamples
-	dh_installmime
-	dh_installman
-	dh_link
-	dh_strip
-	dh_compress
-	dh_fixperms
-	dh_installdeb
-	dh_shlibdeps
-	dh_gencontrol
-	dh_md5sums
-	dh_builddeb
-
-binary: binary-indep binary-arch
-.PHONY: build clean binary-indep binary-arch binary install configure
+	mkdir -p $(DESTRESDIR)/usr/share/applications
+	intltool-merge debian/po/freefilesync -d -u -c debian/po/.intltool-merge-cache debian/freefilesync.desktop.in $(DESTRESDIR)/usr/share/applications/freefilesync.desktop
+	intltool-merge debian/po/freefilesync -d -u -c debian/po/.intltool-merge-cache debian/realtimesync.desktop.in $(DESTRESDIR)/usr/share/applications/realtimesync.desktop

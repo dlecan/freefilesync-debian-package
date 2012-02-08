@@ -1,3 +1,23 @@
+freefilesync (5.0.1-0ubuntu1~ppa7~oneiric1~exp5) oneiric; urgency=low
+
+  * Better manpages installation
+
+ -- Damien Lecan <dev@dlecan.com>  Mon, 07 Feb 2012 21:32:23 +0100
+
+freefilesync (5.0.1-0ubuntu1~ppa7~oneiric1~exp4) oneiric; urgency=low
+
+  * Remove lintian warning about debhelper version
+  * Remove lintian warning about SF redirector
+  * Install manpages correctly
+
+ -- Damien Lecan <dev@dlecan.com>  Mon, 07 Feb 2012 17:22:53 +0100
+
+freefilesync (5.0.1-0ubuntu1~ppa7~oneiric1~exp3) oneiric; urgency=low
+
+  * Try again to fix build error
+
+ -- Damien Lecan <dev@dlecan.com>  Mon, 06 Feb 2012 21:55:17 +0100
+
 freefilesync (5.0.1-0ubuntu1~ppa7~oneiric1~exp2) oneiric; urgency=low
 
   * Try again to fix build error
