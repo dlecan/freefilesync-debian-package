@@ -1,70 +1,12 @@
-freefilesync (5.0.1-0ubuntu1~ppa7~oneiric1~exp5) oneiric; urgency=low
+freefilesync (5.0.1-4-0ubuntu1~ppa) oneiric; urgency=low
 
+  * Full "rules" file rewrite
   * Better manpages installation
-
- -- Damien Lecan <dev@dlecan.com>  Mon, 07 Feb 2012 21:32:23 +0100
-
-freefilesync (5.0.1-0ubuntu1~ppa7~oneiric1~exp4) oneiric; urgency=low
-
   * Remove lintian warning about debhelper version
   * Remove lintian warning about SF redirector
-  * Install manpages correctly
-
- -- Damien Lecan <dev@dlecan.com>  Mon, 07 Feb 2012 17:22:53 +0100
-
-freefilesync (5.0.1-0ubuntu1~ppa7~oneiric1~exp3) oneiric; urgency=low
-
-  * Try again to fix build error
-
- -- Damien Lecan <dev@dlecan.com>  Mon, 06 Feb 2012 21:55:17 +0100
-
-freefilesync (5.0.1-0ubuntu1~ppa7~oneiric1~exp2) oneiric; urgency=low
-
-  * Try again to fix build error
-
- -- Damien Lecan <dev@dlecan.com>  Mon, 06 Feb 2012 21:36:17 +0100
-
-freefilesync (5.0.1-0ubuntu1~ppa7~oneiric1~exp1) oneiric; urgency=low
-
-  * Try again to fix build error
-
- -- Damien Lecan <dev@dlecan.com>  Mon, 05 Feb 2012 18:32:47 +0100
-
-freefilesync (5.0.1-0ubuntu1~ppa6~oneiric1~exp1) oneiric; urgency=low
-
-  * Try again to fix build error
-
- -- Damien Lecan <dev@dlecan.com>  Mon, 05 Feb 2012 16:32:47 +0100
-
-freefilesync (5.0.1-0ubuntu1~ppa6~oneiric1) oneiric; urgency=low
-
-  * Fix build error
-
- -- Damien Lecan <dev@dlecan.com>  Mon, 04 Feb 2012 15:12:02 +0100
-
-freefilesync (5.0.1-0ubuntu1~ppa5~oneiric1) oneiric; urgency=low
-
-  * Fix intltool-merge issue
-
- -- Damien Lecan <dev@dlecan.com>  Mon, 02 Feb 2012 11:56:37 +0100
-
-freefilesync (5.0.1-0ubuntu1~ppa4~oneiric1) oneiric; urgency=low
-
-  * Add missing mkdir
-
- -- Damien Lecan <dev@dlecan.com>  Mon, 02 Feb 2012 22:04:01 +0100
-
-freefilesync (5.0.1-0ubuntu1~ppa3~oneiric1) oneiric; urgency=low
-
-  * Fix bug with mkdir use
-
- -- Damien Lecan <dev@dlecan.com>  Mon, 02 Feb 2012 09:51:06 +0100
-
-freefilesync (5.0.1-0ubuntu1~ppa2~oneiric1) oneiric; urgency=low
-
   * Images are no more generated in debian/ directory
 
- -- Damien Lecan <dev@dlecan.com>  Mon, 01 Feb 2012 22:14:34 +0100
+ -- Damien Lecan <dev@dlecan.com>  Mon, 08 Feb 2012 10:50:58 +0100
  
 freefilesync (5.0.1-0ubuntu1~ppa1~oneiric1) oneiric; urgency=low
 
