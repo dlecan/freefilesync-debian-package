@@ -14,6 +14,11 @@ Description: folder comparison and synchronization tool
  for highest performance and usability without restricted or overloaded 
  UI interfaces. 
  .
- It's key features: Multiple folder pairs, Batch capability, Binary 
- comparison, Handle conflicts and propagate deletions, Optimized 
- performance, Transactional file copy, ...
+ Features:
+  * Multiple folder pairs
+  * Batch capability
+  * Binary comparison
+  * Handle conflicts and propagate deletions
+  * Optimized performance
+  * Transactional file copy
+  * ...
