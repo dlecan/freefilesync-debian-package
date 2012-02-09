@@ -7,6 +7,7 @@ Report issues with FreeFileSync itself here : http://freefilesync.sourceforge.ne
 
 === Packaging branches ===
 * "master" branch : Useless
-* "ubuntu" branch : package for Ubuntu Oneiric
-* "ubuntu-precise" branch : package for Ubuntu Precise
-* "debian-unstable" : package for Debian Unstable
+* "ubuntu" branch : FFS package for Ubuntu
+* "ubuntu-experimental" branch : Experimental FFS package for Ubuntu
+* "debian-ppa" : Special packaging of Ubuntu package for Debian Unstable testing (remove all Ubuntu dependencies)
+* "debian-unstable" : package for Debian Unstable (+ Debian changelog)
