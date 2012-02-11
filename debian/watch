@@ -1,4 +1,5 @@
 version=3
 
-opts="uversionmangle=s/$/.0/" \
-http://sf.net/projects/freefilesync/files/freefilesync/v([0-9]+\.[0-9]+)/FreeFileSync_v([0-9]+\.[0-9]+)_source\.zip/download
+opts=downloadurlmangle=s|/download||,filenamemangle=s|http://sourceforge.net/projects/freefilesync/files/freefilesync/.+?/||;s|.download|| \
+  http://sourceforge.net/projects/freefilesync/files/freefilesync/ \
+  http://sourceforge.net/projects/freefilesync/files/freefilesync/.+?/freefilesync-(.*)_source\.zip/download
