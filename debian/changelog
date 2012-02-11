@@ -1,3 +1,9 @@
+freefilesync (5.0.1-0ubuntu3~ppa) oneiric; urgency=low
+
+  * Better watch file
+
+ -- Damien Lecan <dev@dlecan.com>  Sat, 11 Feb 2012 22:00:18 +0100
+ 
 freefilesync (5.0.1-0ubuntu2~ppa) oneiric; urgency=low
 
   * Full "rules" file rewrite
