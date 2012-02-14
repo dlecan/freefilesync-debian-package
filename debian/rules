@@ -13,6 +13,11 @@
 export DESTRESDIR=$(CURDIR)/debian/tmp
 export IMGDIR=$(DESTRESDIR)/usr/share/icons/hicolor
 
+# Grab the version from the changelog, up to the first -
+export DEB_DEBIAN_DIR=$(dir $(firstword $(MAKEFILE_LIST)))
+export DEB_UPSTREAM_VERSION=$(shell dpkg-parsechangelog -l$(DEB_DEBIAN_DIR)/changelog \
+                               | sed -rne 's,^Version: ([^-]+).*,\1,p')
+
 %:
 	dh $@
 
@@ -74,3 +79,16 @@ override_dh_auto_install:
 	mkdir -p $(DESTRESDIR)/usr/share/applications
 	intltool-merge debian/po/freefilesync -d -u -c debian/po/.intltool-merge-cache debian/freefilesync.desktop.in $(DESTRESDIR)/usr/share/applications/freefilesync.desktop
 	intltool-merge debian/po/freefilesync -d -u -c debian/po/.intltool-merge-cache debian/realtimesync.desktop.in $(DESTRESDIR)/usr/share/applications/realtimesync.desktop
+
+get-orig-source:
+	# Uscan can grab upstream source zip
+	uscan --noconf --force-download --download-current-version --debug --verbose --destdir=. $(DEB_DEBIAN_DIR)/..
+	# Unpack
+	# Repacked source should have a top-level directory ending in .orig
+	# as a reminder to other developers
+	unzip FreeFileSync_v$(DEB_UPSTREAM_VERSION)_source.zip -d freefilesync_$(DEB_UPSTREAM_VERSION).orig
+	rm FreeFileSync_v$(DEB_UPSTREAM_VERSION)_source.zip
+	GZIP=--best tar -cz --owner root --group root --mode a+rX \
+			-f freefilesync_$(DEB_UPSTREAM_VERSION).orig.tar.gz \
+			freefilesync_$(DEB_UPSTREAM_VERSION).orig
+	rm -r freefilesync_$(DEB_UPSTREAM_VERSION).orig
