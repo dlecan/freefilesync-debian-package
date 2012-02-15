@@ -5,7 +5,7 @@ freefilesync (5.0.1-0ubuntu4) oneiric; urgency=low
   * Remove lintian override (against watch file)
   * debian/rules get-orig-source target added
 
- -- Damien Lecan <dev@dlecan.com>  TBD
+ -- Damien Lecan <dev@dlecan.com>  Wed, 15 Feb 2012 21:23:04 +0100
  
 freefilesync (5.0.1-0ubuntu3~ppa) oneiric; urgency=low
 
