@@ -1,5 +1,2 @@
 version=3
-
-opts=downloadurlmangle=s|/download||,filenamemangle=s|http://sourceforge.net/projects/freefilesync/files/freefilesync/.+?/||;s|.download|| \
-  http://sourceforge.net/projects/freefilesync/files/freefilesync/ \
-  http://sourceforge.net/projects/freefilesync/files/freefilesync/.+?/freefilesync-(.*)_source\.zip/download
+http://sf.net/freefilesync/FreeFileSync_v(.+)_source.zip
