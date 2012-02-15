@@ -1,10 +1,11 @@
-freefilesync (XXXX) oneiric; urgency=low
+freefilesync (5.0.1-0ubuntu4) oneiric; urgency=low
 
+  * New package: freefilesync. (LP: #597694)
   * Better watch file (again)
   * Remove lintian override (against watch file)
   * debian/rules get-orig-source target added
 
- -- Damien Lecan <dev@dlecan.com>  XXXX
+ -- Damien Lecan <dev@dlecan.com>  TBD
  
 freefilesync (5.0.1-0ubuntu3~ppa) oneiric; urgency=low
 
