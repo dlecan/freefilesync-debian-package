@@ -1,4 +1,4 @@
-freefilesync (5.0.1-0ubuntu5~oneiric) oneiric; urgency=low
+freefilesync (5.0.1-0ubuntu6~oneiric) oneiric; urgency=low
 
   * New package: freefilesync. (LP: #597694)
   * New series : Ubuntu Precise Pangolin
