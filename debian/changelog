@@ -1,3 +1,10 @@
+freefilesync (5.0.1-0ubuntu5) oneiric; urgency=low
+
+  * New package: freefilesync. (LP: #597694)
+  * New series : Ubuntu Precise Pangolin
+
+ -- Damien Lecan <dev@dlecan.com>  Wed, 27 Feb 2012 21:36:45 +0100
+
 freefilesync (5.0.1-0ubuntu4) oneiric; urgency=low
 
   * New package: freefilesync. (LP: #597694)
