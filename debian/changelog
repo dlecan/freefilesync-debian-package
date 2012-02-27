@@ -1,4 +1,4 @@
-freefilesync (5.0.1-0ubuntu4) oneiric; urgency=low
+freefilesync (5.0.1-0ubuntu4) precise; urgency=low
 
   * New package: freefilesync. (LP: #597694)
   * Better watch file (again)
