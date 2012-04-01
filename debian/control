@@ -5,7 +5,6 @@ Maintainer: Damien Lecan <dev@dlecan.com>
 Build-Depends: debhelper (>= 8),
                autotools-dev,
                libwxgtk2.8-dev,
-               libgtkmm-2.4-dev,
                imagemagick,
                intltool,
                libboost-thread-dev (>= 1.46),

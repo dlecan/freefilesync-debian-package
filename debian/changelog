@@ -1,3 +1,43 @@
+freefilesync (5.2-0ubuntu1~oneiric) oneiric; urgency=low
+
+  * New package: freefilesync. (LP: #597694)
+  * New upstream version : FFS 5.1 and FFS 5.2
+    * Fixed runtime error "Error comparing strings! (LCMapString)" (Windows 2000, XP only)
+    * New category for time span filter: last x days
+    * Fixed "Error loading library function: GetVolumeInformationByHandleW" if NTFS permissions are copied
+    * Fixed command line issues: allow config name without extension, allow multiple directories instead of a config file
+    * Reenabled global shortcut F8 to toggle data shown in middle grid
+    * Unified error handling on failure to create log directory
+    * Do not close batch creation dialog after save
+    * Tree view: compress and filter root nodes the same way as regular folder nodes
+    * Fixed wrong tooltip being shown if directory name changes
+    * Date range selector does not trim year field anymore
+    * Show action "do nothing" on mouse-hover for conflicts in middle grid
+    * Fixed "Windows Error Code 59: An unexpected network error occurred"
+    * New filter pattern: *\* matches all files in subdirectories of base directories
+    * Fixed "*?" filter sub-sequence
+    * Fixed "Cannot convert from the charset 'Unknown encoding (-1)'!"
+    * Support Ctrl + A in filter dialog
+    * Support large filter lists > 32 kByte
+    * Allow to hide file icons
+    * Avoid switching monitor when main dialog is maximized on multiple monitor systems
+    * Improved huge XML files loading times by a factor of 3000, saving by a factor of 3
+    * Restore grid scroll position after repeated comparisons
+    * Show log after sync when non-fatal errors occurred
+    * Fixed crash in UTF8 conversion when processing a corrupted ffs_db file
+    * Even more pedantic user interface fine-tuning
+    * Compiles and runs on openSuse 12.1
+    * Fixed grid page-up/down keys scrolling twice (Linux, wxGTK 2.9.3)
+    * Fixed unwanted grid scrolling when toggling middle column (Linux, wxGTK 2.9.3)
+    * Fixed middle grid tooltip occasionally going blank (Linux)
+    * Support single shift-click to check/set direction of multiple rows
+    * Removed gtkmm dependency (Linux)
+    * Installer remembers all settings for next installation (local installation only)
+    * All executables digitally signed
+    * Updated translation files  
+
+ -- Damien Lecan <dev@dlecan.com>  Sun, 01 Apr 2012 16:01:04 +0200
+
 freefilesync (5.0.1-0ubuntu6~oneiric) oneiric; urgency=low
 
   * New package: freefilesync. (LP: #597694)
