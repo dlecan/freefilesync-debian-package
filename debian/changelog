@@ -1,3 +1,31 @@
+freefilesync (5.3-0ubuntu1~precise) precise; urgency=low
+
+  * New package: freefilesync. (LP: #597694)
+  * New upstream version : FFS 5.3
+    * Show which processes lock a file during synchronization (Windows Vista and later)
+    * Use unbuffered copy to speed up copying large files (Windows Vista and later)
+    * Preserve NTFS sparse files
+    * Support referencing all logical volumes by name (including FreeOTFE virtual drives)
+    * Fixed lag showing "Searching for directory" on comparison
+    * New context menu filter option: exclude by short name
+    * Use clicked-on row rather than anchor when determining action for shift-selection
+    * Refresh grid after pressing "CTRL + A"
+    * Add base folder pairs to CSV export
+    * Show full path in tooltip if multiple folder pairs are used
+    * Show child dialogs on same monitor as parent dialog on multiple monitor systems
+    * Added statistics at beginning of batch log file
+    * Fixed batch mode final speed statistic and reset graph after binary comparison
+    * RealtimeSync: Automatically retry after 15 seconds if an error occurrs
+    * Show button images untrimmed (Linux)
+    * Fixed problems with auto-closing progress dialog (Linux)
+    * Fixed unresponsive progress dialog and systray icon (Linux)
+    * New option in GlobalSettings.xml: "LockDirectoriesDuringSync"
+    * Added Lithuanian translation
+    * Added Norwegian translation
+    * Updated translation files
+
+ -- Damien Lecan <dev@dlecan.com>  Thu, 03 May 2012 15:06:21 +0200
+
 freefilesync (5.2-0ubuntu1~precise) precise; urgency=low
 
   * New package: freefilesync. (LP: #597694)
