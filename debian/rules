@@ -74,7 +74,16 @@ override_dh_auto_install:
 	convert RealtimeSync/RealtimeSync.ico[3] $(IMGDIR)/32x32/mimetypes/application-x-freefilesync-real.png
 	convert RealtimeSync/RealtimeSync.ico[3] $(IMGDIR)/16x16/apps/realtimesync.png
 	convert RealtimeSync/RealtimeSync.ico[3] $(IMGDIR)/16x16/mimetypes/application-x-freefilesync-real.png
-	
+    
+	# FreeFileSync Batch
+	convert lib/Batch.ico[0] $(IMGDIR)/256x256/mimetypes/application-x-freefilesync-batch.png
+	# Do not generate 128x128 image on platform > Lucid, as 'convert' is not able to handle it
+	# See LP : 807013
+	#convert lib/Batch.ico[1] $(IMGDIR)/128x128/mimetypes/application-x-freefilesync-batch.png
+	convert lib/Batch.ico[2] $(IMGDIR)/48x48/mimetypes/application-x-freefilesync-batch.png
+	convert lib/Batch.ico[3] $(IMGDIR)/32x32/mimetypes/application-x-freefilesync-batch.png
+	convert lib/Batch.ico[4] $(IMGDIR)/16x16/mimetypes/application-x-freefilesync-batch.png	
+
 	# Build desktop files
 	mkdir -p $(DESTRESDIR)/usr/share/applications
 	intltool-merge debian/po/freefilesync -d -u -c debian/po/.intltool-merge-cache debian/freefilesync.desktop.in $(DESTRESDIR)/usr/share/applications/freefilesync.desktop
