@@ -14,7 +14,7 @@ msgstr ""
 
 #: realtimesync.desktop.in:3
 msgid "Start synchronization in real time"
-msgstr ""
+msgstr "Start synchronisatie in real time"
 
 #: freefilesync.desktop.in:3
 msgid "Keep files and folders synchronized"
