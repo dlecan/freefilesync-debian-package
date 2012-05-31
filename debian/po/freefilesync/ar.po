@@ -1,5 +1,3 @@
-msgid ""
-msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-27 08:18+0000\n"
@@ -12,17 +10,9 @@ msgstr ""
 "X-Launchpad-Export-Date: 2010-05-28 03:47+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
-#: realtimesync.desktop.in:2
-msgid "RealtimeSync"
-msgstr "RealtimeSync"
-
 #: realtimesync.desktop.in:3
 msgid "Start synchronization in real time"
 msgstr ""
-
-#: freefilesync.desktop.in:2
-msgid "FreeFileSync"
-msgstr "FreeFileSync"
 
 #: freefilesync.desktop.in:3
 msgid "Keep files and folders synchronized"
