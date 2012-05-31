@@ -12,8 +12,8 @@
 
 #: realtimesync.desktop.in:3
 msgid "Start synchronization in real time"
-msgstr ""
+msgstr "بدء المزامنة في الوقت الحالي"
 
 #: freefilesync.desktop.in:3
 msgid "Keep files and folders synchronized"
-msgstr ""
+msgstr "الحفاض على الملفات و المجلدات متزامنة"

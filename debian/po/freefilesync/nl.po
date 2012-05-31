@@ -18,4 +18,4 @@ msgstr ""
 
 #: freefilesync.desktop.in:3
 msgid "Keep files and folders synchronized"
-msgstr ""
+msgstr "Houd bestanden en mappen gesynchroniseerd"
