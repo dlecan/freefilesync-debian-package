@@ -10,7 +10,7 @@ Build-Depends: debhelper (>= 8),
                libboost-thread-dev (>= 1.46),
                libunity-dev,
                gcc (>= 4:4.5)
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 Homepage: http://freefilesync.sourceforge.net/
 
 Package: freefilesync

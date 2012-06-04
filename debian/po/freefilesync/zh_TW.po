@@ -12,17 +12,9 @@ msgstr ""
 "X-Launchpad-Export-Date: 2010-06-24 03:56+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
-#: realtimesync.desktop.in:2
-msgid "RealtimeSync"
-msgstr "RealtimeSync"
-
 #: realtimesync.desktop.in:3
 msgid "Start synchronization in real time"
 msgstr "啟動即時同步"
-
-#: freefilesync.desktop.in:2
-msgid "FreeFileSync"
-msgstr "FreeFileSync"
 
 #: freefilesync.desktop.in:3
 msgid "Keep files and folders synchronized"
