@@ -4,11 +4,15 @@
 		<comment>FreeFileSync configuration file</comment>
 		<comment xml:lang="fr">Fichier de configuration FreeFileSync</comment>
 		<glob pattern="*.ffs_gui"/>
-		<glob pattern="*.ffs_batch"/>
 	</mime-type>
 	<mime-type type="application/x-freefilesync-real">
 		<comment>RealTimeSync configuration file</comment>
 		<comment xml:lang="fr">Fichier de configuration RealTimeSync</comment>
 		<glob pattern="*.ffs_real"/>
+	</mime-type>
+	<mime-type type="application/x-freefilesync-batch">
+		<comment>FreeFileSync batch file</comment>
+		<comment xml:lang="fr">Fichier de batch FreeFileSync</comment>
+		<glob pattern="*.ffs_batch"/>
 	</mime-type>
 </mime-info>

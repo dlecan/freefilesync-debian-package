@@ -16,3 +16,7 @@ usr/share/icons/hicolor/32x32/apps/realtimesync.png
 usr/share/icons/hicolor/32x32/mimetypes/application-x-freefilesync-real.png
 usr/share/icons/hicolor/16x16/apps/realtimesync.png
 usr/share/icons/hicolor/16x16/mimetypes/application-x-freefilesync-real.png
+usr/share/icons/hicolor/256x256/mimetypes/application-x-freefilesync-batch.png
+usr/share/icons/hicolor/48x48/mimetypes/application-x-freefilesync-batch.png
+usr/share/icons/hicolor/32x32/mimetypes/application-x-freefilesync-batch.png
+usr/share/icons/hicolor/16x16/mimetypes/application-x-freefilesync-batch.png
