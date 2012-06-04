@@ -1,3 +1,36 @@
+freefilesync (5.4-0ubuntu1~oneiric) oneiric; urgency=low
+
+  * New package: freefilesync. (LP: #597694)
+  * Update to Standard 3.9.3 - no changes necessary
+  * New icon for .ffs_batch files
+  * Update translation files
+  * New upstream version: FFS 5.4
+    * Copy all NTFS extended attributes
+    * Improved statistics panel
+    * Improved main grid
+    * Support context menu for files in overview tree
+    * Process double-clicks outside main grid
+    * Allow quoted paths ending with backslash in command line: "C:\"
+    * Fully localized number formatting (Windows)
+    * Fixed deletion dialog header being trimmed (Linux)
+    * Fixed exclusion via context menu (Linux)
+    * Preserve row label width after comparison (Linux)
+    * Updated help file
+    * New batch mode return codes, see help file
+    * Prefix custom deletion directory with job name
+    * Use the same time stamp for log file and versioning
+    * Handle folder drag and drop outside main grid
+    * Avoid name clash having multiple folder pairs delete into the same versioning folder
+    * Exit FreeFileSync automatically while upgrading to new version
+    * Accessibility: Support high contrast color schemes
+    * Yet another UI design overhaul
+    * Fixed "access denied" issue on OS X-hosted network shares
+    * Support Citrix folder shares
+    * Support Arch Linux (Chakra)
+    * Updated translation files
+
+ -- Damien Lecan <dev@dlecan.com>  Mon, 04 June 2012 15:47:02 +0200
+
 freefilesync (5.3-0ubuntu1~oneiric) oneiric; urgency=low
 
   * New package: freefilesync. (LP: #597694)
