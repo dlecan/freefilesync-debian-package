@@ -1,4 +1,4 @@
-freefilesync (5.5-0ubuntu1~oneiric) precise; urgency=low
+freefilesync (5.5-0ubuntu1~precise) precise; urgency=low
 
   * New package: freefilesync. (LP: #597694)
   * New upstream version: FFS 5.5
@@ -23,7 +23,7 @@ freefilesync (5.5-0ubuntu1~oneiric) precise; urgency=low
 
  -- Damien Lecan <dev@dlecan.com>  Mon, 04 Jul 2012 15:29:06 +0200
 
-freefilesync (5.4-0ubuntu1~oneiric) precise; urgency=low
+freefilesync (5.4-0ubuntu1~precise) precise; urgency=low
 
   * New package: freefilesync. (LP: #597694)
   * Update to Standard 3.9.3 - no changes necessary
