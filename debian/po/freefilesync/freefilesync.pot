@@ -9,16 +9,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: realtimesync.desktop.in:2
-msgid "RealtimeSync"
-msgstr ""
-
 #: realtimesync.desktop.in:3
 msgid "Start synchronization in real time"
-msgstr ""
-
-#: freefilesync.desktop.in:2
-msgid "FreeFileSync"
 msgstr ""
 
 #: freefilesync.desktop.in:3
