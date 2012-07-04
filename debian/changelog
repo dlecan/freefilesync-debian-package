@@ -1,4 +1,29 @@
-freefilesync (5.4-0ubuntu1~precise) precise; urgency=low
+freefilesync (5.5-0ubuntu1~oneiric) precise; urgency=low
+
+  * New package: freefilesync. (LP: #597694)
+  * New upstream version: FFS 5.5
+    * New database format for <automatic> variant: old database files are converted automatically
+    * Tuned performance for <automatic> variant when saving database for millions of files: > 95% faster
+    * Support partial database updates for <automatic> variant respecting current filter
+    * Reduced size of database files by 30%
+    * Fine-tuned <automatic> algorithm to avoid certain conflicts after changing comparison settings
+    * Lower peak memory consumption when reading database participating in multiple sync jobs
+    * Refined symlink categorization and <automatic> variant handling
+    * Always save log of last syncs to %appdata%\FreeFileSynce\LastSyncs.log (128 kB limit)
+    * "Save" and "Save As" menu options
+    * Properly show status message after save configuration
+    * Avoid issues applying file modification time on certain NAS
+    * Refined last-used configuration handling
+    * Avoid race-condition: database file is only read if directory is existing
+    * Protect against temporary network drop between comparison and synchronization
+    * Rearranged statistics panel to save vertical space when vertically aligned
+    * Removed limitation for number of conflicts shown in the warning message and log
+    * Consider both global and local filter when estimating whether folder could contain matches
+    * Updated translation files
+
+ -- Damien Lecan <dev@dlecan.com>  Mon, 04 Jul 2012 15:29:06 +0200
+
+freefilesync (5.4-0ubuntu1~oneiric) precise; urgency=low
 
   * New package: freefilesync. (LP: #597694)
   * Update to Standard 3.9.3 - no changes necessary
