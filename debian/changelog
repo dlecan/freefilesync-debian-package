@@ -1,4 +1,4 @@
-freefilesync (5.5-0ubuntu2~oneiric) oneric; urgency=low
+freefilesync (5.5-0ubuntu2~oneiric) oneiric; urgency=low
   * New package: freefilesync. (LP: #597694)
   * Add new compilation dependencies
 
