@@ -1,3 +1,23 @@
+freefilesync (5.6-0ubuntu1~precise) precise; urgency=low
+  
+  * New package: freefilesync. (LP: #597694)
+  * New upstream version: FFS 5.6
+    * Resize left and right grids equally
+    * Allow to move middle grid position via mouse
+    * Automatically resize file name columns
+    * Do not follow reparse points other than symlinks and mount points
+    * Warn if Recycle Bin is not available during manual deletion
+    * Fixed error when saving logfile into volume root directory
+    * Show files which differ in attributes only in the same category as "equal" files
+    * Apply hidden attribute to lock file
+    * Fixed potential "access denied" problem when updating the database file
+    * Show errors when saving configuration files during exit (ignore for batch mode)
+    * Mark begin of comparison phase in the log file
+    * More detailed tooltip describing items that differ in attributes only
+    * Added Scottish Gaelic translation
+
+ -- Damien Lecan <dev@dlecan.com>  Mon, 15 Aug 2012 22:47:37 +0200
+
 freefilesync (5.5-0ubuntu2~precise) precise; urgency=low
   * New package: freefilesync. (LP: #597694)
   * Add new compilation dependencies
