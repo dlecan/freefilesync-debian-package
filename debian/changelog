@@ -1,3 +1,24 @@
+freefilesync (5.7-0ubuntu1~precise) precise; urgency=low
+  
+  * New package: freefilesync. (LP: #597694)
+  * New upstream version: FFS 5.7
+    * Modern directory selection dialog (Windows Vista and later)
+    * New file versioning scheme appending revision number to files
+    * New sync option to limit number of versions per file
+    * Revised configuration format for *.ffs_gui/*.ffs_batch files: old format will be supported for some time
+    * Fixed crash on invalid file modification times
+    * Fixed zlib error on empty database stream
+    * GlobalSettings.xml: added "MaxSize" parameter to "ConfigHistory"
+    * Fixed occasional crash on GTK 2 (Linux)
+    * Always show "items processed" in log file
+    * Simplified configuration dialogs
+    * Fixed password prompt not always coming up when connecting to a network share
+    * Support environment variables everywhere: +on completion; +external applications; +RTS command
+    * Harmonized external application macros: %item_path%, %item_folder%, %item2_path%, %item2_folder%
+    * Updated translation files
+
+ -- Damien Lecan <dev@dlecan.com>  Wed, 05 Sep 2012 21:11:16 +0200
+
 freefilesync (5.6-0ubuntu1~precise) precise; urgency=low
   
   * New package: freefilesync. (LP: #597694)
