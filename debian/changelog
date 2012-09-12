@@ -1,3 +1,10 @@
+freefilesync (5.7-0ubuntu2~precise) precise; urgency=low
+  
+  * New package: freefilesync. (LP: #597694)
+  * Upgrade dependencies : libboost*, debhelpper, gcc
+
+ -- Damien Lecan <dev@dlecan.com>  Wed, 12 Sep 2012 21:23:45 +0200
+
 freefilesync (5.7-0ubuntu1~precise) precise; urgency=low
   
   * New package: freefilesync. (LP: #597694)

@@ -2,15 +2,15 @@ Source: freefilesync
 Section: utils
 Priority: optional
 Maintainer: Damien Lecan <dev@dlecan.com>
-Build-Depends: debhelper (>= 8),
+Build-Depends: debhelper (>= 9),
                autotools-dev,
                libwxgtk2.8-dev,
                imagemagick,
                intltool,
-               libboost-thread-dev (>= 1.46),
-               libboost-system-dev (>= 1.46),
+               libboost-thread-dev (>= 1.48),
+               libboost-system-dev (>= 1.48),
                libunity-dev,
-               gcc (>= 4:4.5)
+               gcc (>= 4:4.6)
 Standards-Version: 3.9.3
 Homepage: http://freefilesync.sourceforge.net/
 
