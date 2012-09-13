@@ -2,13 +2,14 @@ Source: freefilesync
 Section: utils
 Priority: optional
 Maintainer: Damien Lecan <dev@dlecan.com>
-Build-Depends: debhelper (>= 8),
+Build-Depends: debhelper (>= 9),
                autotools-dev,
                libwxgtk2.8-dev,
                imagemagick,
                intltool,
-               libboost-thread-dev (>= 1.46),
-               gcc (>= 4:4.5)
+               libboost-thread-dev (>= 1.48),
+               libboost-system-dev (>= 1.48),
+               gcc (>= 4:4.6)
 Standards-Version: 3.9.3
 Homepage: http://freefilesync.sourceforge.net/
 
@@ -17,16 +18,33 @@ Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          xdg-utils
-Description: folder comparison and synchronization tool
- This is a folder comparison and synchronization tool. It is optimized 
- for highest performance and usability without restricted or overloaded 
- UI interfaces. 
+Description: Visual folder comparison and synchronization
+ FreeFileSync is a folder comparison and synchronization tool providing
+ highly optimized performance and usability without needless user
+ interface complexity.
  .
- Features:
-  * Multiple folder pairs
-  * Batch capability
-  * Binary comparison
-  * Handle conflicts and propagate deletions
-  * Optimized performance
-  * Transactional file copy
-  * ...
+ Key features:
+ * Detect moved and renamed files and folders,
+ * Detect conflicts and propagate deletions,
+ * Binary comparison,
+ * Full support for Symbolic Links,
+ * Automate sync as a batch job,
+ * Multiple folder pairs,
+ * Copy NTFS extended attributes (compressed,encrypted,sparse),
+ * Copy NTFS security permissions,
+ * Support long path names > 260 characters,
+ * Fail-safe file copy,
+ * Cross-platform: Windows/Linux,
+ * Expand environment variables like %USERPROFILE%,
+ * Access variable drive letters by volume name (USB sticks),
+ * Native 32 and 64-bit builds,
+ * Keep versions of deleted/updated files,
+ * Optimal sync sequence prevents disc space bottlenecks,
+ * Full unicode support,
+ * Highly optimized performance,
+ * Include/exclude files via filter,
+ * Local and portable installation,
+ * Handle daylight saving time changes on FAT/FAT32,
+ * Use macros %time%, %date%, et al. for recurring backups,
+ * Case sensitive synchronization,
+ * Built-in locking serializes multiple jobs running against the same network share
