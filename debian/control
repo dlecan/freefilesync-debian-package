@@ -3,6 +3,7 @@ Section: utils
 Priority: optional
 Maintainer: Damien Lecan <dev@dlecan.com>
 Build-Depends: debhelper (>= 9),
+               pkg-config,
                autotools-dev,
                libwxgtk2.8-dev,
                imagemagick,

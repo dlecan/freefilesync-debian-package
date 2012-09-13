@@ -1,3 +1,10 @@
+freefilesync (5.7-0ubuntu3~precise) precise; urgency=low
+  
+  * New package: freefilesync. (LP: #597694)
+  * Add new dependency : pkg-config
+
+ -- Damien Lecan <dev@dlecan.com>  Thu, 13 Sep 2012 10:18:58 +0200
+
 freefilesync (5.7-0ubuntu2~precise) precise; urgency=low
   
   * New package: freefilesync. (LP: #597694)
