@@ -1,3 +1,21 @@
+freefilesync (5.8-0ubuntu1~precise) precise; urgency=low
+  
+  * New package: freefilesync. (LP: #597694)
+  * New upstream version: FFS 5.8
+    * New icon theme
+    * Dynamic save button and dialog title show unsaved configuration
+    * Exclude all folders if file size or time span filters are active
+    * Added macros %csidl_Nethood%, %csidl_Programs%, %csidl_Startup%
+    * Fixed crash on failed CRT parameter validation (Windows)
+    * Auto-updater handles moved web address for version check
+    * Fixed configuration conversion error when deleting into versioning folder
+    * Avoid modal error dialogs in batch mode unless error handling is set to "popup"
+    * Set return codes in batch mode even if modal dialogs are shown
+    * Disabled UAC virtualization for 32-bit user-mode process
+    * Descriptive error message when setting invalid dates on FAT volumes
+
+ -- Damien Lecan <dev@dlecan.com>  Thu, 03 Oct 2012 21:43:37 +0200
+
 freefilesync (5.7-0ubuntu3~precise) precise; urgency=low
   
   * New package: freefilesync. (LP: #597694)
