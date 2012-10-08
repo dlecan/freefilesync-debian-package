@@ -1,3 +1,114 @@
+freefilesync (5.8-1) unstable; urgency=low
+
+  * New package: freefilesync. Closes: #648610
+  * New upstream version : FFS 5.5, 5.6, 5.7 and 5.8
+
+ -- Damien Lecan <dev@dlecan.com>  Mon, 03 Oct 2012 21:44:11 +0200
+
+freefilesync (5.8-0ubuntu1~precise) precise; urgency=low
+  
+  * New package: freefilesync. (LP: #597694)
+  * New upstream version: FFS 5.8
+    * New icon theme
+    * Dynamic save button and dialog title show unsaved configuration
+    * Exclude all folders if file size or time span filters are active
+    * Added macros %csidl_Nethood%, %csidl_Programs%, %csidl_Startup%
+    * Fixed crash on failed CRT parameter validation (Windows)
+    * Auto-updater handles moved web address for version check
+    * Fixed configuration conversion error when deleting into versioning folder
+    * Avoid modal error dialogs in batch mode unless error handling is set to "popup"
+    * Set return codes in batch mode even if modal dialogs are shown
+    * Disabled UAC virtualization for 32-bit user-mode process
+    * Descriptive error message when setting invalid dates on FAT volumes
+
+ -- Damien Lecan <dev@dlecan.com>  Thu, 03 Oct 2012 21:43:37 +0200
+
+freefilesync (5.7-0ubuntu3~precise) precise; urgency=low
+  
+  * New package: freefilesync. (LP: #597694)
+  * Add new dependency : pkg-config
+
+ -- Damien Lecan <dev@dlecan.com>  Thu, 13 Sep 2012 10:18:58 +0200
+
+freefilesync (5.7-0ubuntu2~precise) precise; urgency=low
+  
+  * New package: freefilesync. (LP: #597694)
+  * Upgrade dependencies : libboost*, debhelpper, gcc
+
+ -- Damien Lecan <dev@dlecan.com>  Wed, 12 Sep 2012 21:23:45 +0200
+
+freefilesync (5.7-0ubuntu1~precise) precise; urgency=low
+  
+  * New package: freefilesync. (LP: #597694)
+  * New upstream version: FFS 5.7
+    * Modern directory selection dialog (Windows Vista and later)
+    * New file versioning scheme appending revision number to files
+    * New sync option to limit number of versions per file
+    * Revised configuration format for *.ffs_gui/*.ffs_batch files: old format will be supported for some time
+    * Fixed crash on invalid file modification times
+    * Fixed zlib error on empty database stream
+    * GlobalSettings.xml: added "MaxSize" parameter to "ConfigHistory"
+    * Fixed occasional crash on GTK 2 (Linux)
+    * Always show "items processed" in log file
+    * Simplified configuration dialogs
+    * Fixed password prompt not always coming up when connecting to a network share
+    * Support environment variables everywhere: +on completion; +external applications; +RTS command
+    * Harmonized external application macros: %item_path%, %item_folder%, %item2_path%, %item2_folder%
+    * Updated translation files
+
+ -- Damien Lecan <dev@dlecan.com>  Wed, 05 Sep 2012 21:11:16 +0200
+
+freefilesync (5.6-0ubuntu1~precise) precise; urgency=low
+  
+  * New package: freefilesync. (LP: #597694)
+  * New upstream version: FFS 5.6
+    * Resize left and right grids equally
+    * Allow to move middle grid position via mouse
+    * Automatically resize file name columns
+    * Do not follow reparse points other than symlinks and mount points
+    * Warn if Recycle Bin is not available during manual deletion
+    * Fixed error when saving logfile into volume root directory
+    * Show files which differ in attributes only in the same category as "equal" files
+    * Apply hidden attribute to lock file
+    * Fixed potential "access denied" problem when updating the database file
+    * Show errors when saving configuration files during exit (ignore for batch mode)
+    * Mark begin of comparison phase in the log file
+    * More detailed tooltip describing items that differ in attributes only
+    * Added Scottish Gaelic translation
+
+ -- Damien Lecan <dev@dlecan.com>  Mon, 15 Aug 2012 22:47:37 +0200
+
+freefilesync (5.5-0ubuntu2~precise) precise; urgency=low
+  * New package: freefilesync. (LP: #597694)
+  * Add new compilation dependencies
+
+ -- Damien Lecan <dev@dlecan.com>  Mon, 04 Jul 2012 21:45:01 +0200
+
+freefilesync (5.5-0ubuntu1~precise) precise; urgency=low
+
+  * New package: freefilesync. (LP: #597694)
+  * New upstream version: FFS 5.5
+    * New database format for <automatic> variant: old database files are converted automatically
+    * Tuned performance for <automatic> variant when saving database for millions of files: > 95% faster
+    * Support partial database updates for <automatic> variant respecting current filter
+    * Reduced size of database files by 30%
+    * Fine-tuned <automatic> algorithm to avoid certain conflicts after changing comparison settings
+    * Lower peak memory consumption when reading database participating in multiple sync jobs
+    * Refined symlink categorization and <automatic> variant handling
+    * Always save log of last syncs to %appdata%\FreeFileSynce\LastSyncs.log (128 kB limit)
+    * "Save" and "Save As" menu options
+    * Properly show status message after save configuration
+    * Avoid issues applying file modification time on certain NAS
+    * Refined last-used configuration handling
+    * Avoid race-condition: database file is only read if directory is existing
+    * Protect against temporary network drop between comparison and synchronization
+    * Rearranged statistics panel to save vertical space when vertically aligned
+    * Removed limitation for number of conflicts shown in the warning message and log
+    * Consider both global and local filter when estimating whether folder could contain matches
+    * Updated translation files
+
+ -- Damien Lecan <dev@dlecan.com>  Mon, 04 Jul 2012 15:29:06 +0200
+
 freefilesync (5.4-1) unstable; urgency=low
 
   * New package: freefilesync. Closes: #648610
@@ -118,7 +229,7 @@ freefilesync (5.2-0ubuntu1~oneiric) oneiric; urgency=low
 
  -- Damien Lecan <dev@dlecan.com>  Sun, 01 Apr 2012 16:01:04 +0200
 
-freefilesync (5.0.1-0ubuntu6~oneiric) oneiric; urgency=low
+freefilesync (5.0.1-0ubuntu6~precise) precise; urgency=low
 
   * New package: freefilesync. (LP: #597694)
   * New series : Ubuntu Precise Pangolin
