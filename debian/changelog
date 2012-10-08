@@ -1,7 +1,7 @@
 freefilesync (5.8-1) unstable; urgency=low
 
   * New package: freefilesync. Closes: #648610
-  * New upstream version : FFS 5.5, 5.6, 5.7 and 5.8
+  * New upstream version : FreeFileSync 5.5, 5.6, 5.7 and 5.8
 
  -- Damien Lecan <dev@dlecan.com>  Mon, 03 Oct 2012 21:44:11 +0200
 
@@ -36,6 +36,13 @@ freefilesync (5.7-0ubuntu2~precise) precise; urgency=low
   * Upgrade dependencies : libboost*, debhelpper, gcc
 
  -- Damien Lecan <dev@dlecan.com>  Wed, 12 Sep 2012 21:23:45 +0200
+
+freefilesync (5.7-1) unstable; urgency=low
+
+  * New package: freefilesync. Closes: #648610
+  * New upstream version: FreeFileSync 5.7
+
+ -- Damien Lecan <dev@dlecan.com>  Wed, 05 Sep 2012 21:28:56 +0200
 
 freefilesync (5.7-0ubuntu1~precise) precise; urgency=low
   
