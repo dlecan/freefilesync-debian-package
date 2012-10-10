@@ -1,3 +1,10 @@
+freefilesync (5.8-0ubuntu2~precise~debian) precise; urgency=low
+  
+  * New package: freefilesync. (LP: #597694)
+  * Add missing dependency: libgtk2.0-dev
+
+ -- Damien Lecan <dev@dlecan.com>  Thu, 10 Oct 2012 14:15:06 +0200
+
 freefilesync (5.8-0ubuntu1~precise) precise; urgency=low
   
   * New package: freefilesync. (LP: #597694)
