@@ -9,8 +9,8 @@ Build-Depends: debhelper (>= 9),
                libgtk2.0-dev,
                imagemagick,
                intltool,
-               libboost-thread-dev (>= 1.48),
-               libboost-system-dev (>= 1.48),
+               libboost-thread-dev (>= 1.49),
+               libboost-system-dev (>= 1.49),
                gcc (>= 4:4.6)
 Standards-Version: 3.9.3
 Homepage: http://freefilesync.sourceforge.net/
