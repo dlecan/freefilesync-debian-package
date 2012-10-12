@@ -1,3 +1,9 @@
+freefilesync (5.8-0ubuntu1~quantal) precise; urgency=low
+  
+  * New package: freefilesync. (LP: #597694)
+
+ -- Damien Lecan <dev@dlecan.com>  Thu, 12 Oct 2012 13:53:21 +0200
+
 freefilesync (5.8-0ubuntu2~precise) precise; urgency=low
   
   * New package: freefilesync. (LP: #597694)
