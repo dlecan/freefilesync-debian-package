@@ -6,10 +6,11 @@ Build-Depends: debhelper (>= 9),
                pkg-config,
                autotools-dev,
                libwxgtk2.8-dev,
+               libgtk2.0-dev,
                imagemagick,
                intltool,
-               libboost-thread-dev (>= 1.48),
-               libboost-system-dev (>= 1.48),
+               libboost-thread-dev (>= 1.49),
+               libboost-system-dev (>= 1.49),
                libunity-dev,
                gcc (>= 4:4.6)
 Standards-Version: 3.9.3

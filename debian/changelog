@@ -2,6 +2,7 @@ freefilesync (5.8-0ubuntu1~quantal) quantal; urgency=low
 
   * New package: freefilesync. (LP: #597694)
   * New package for Quantal
+  * Add missing dependency: libgtk2.0-dev
 
  -- Damien Lecan <dev@dlecan.com>  Thu, 19 Oct 2012 21:29:53 +0200
 
