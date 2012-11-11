@@ -1,3 +1,24 @@
+freefilesync (5.9-0ubuntu1~precise) precise; urgency=low
+  
+  * New package: freefilesync. (LP: #597694)
+  * New upstream version: FFS 5.9
+    * New icon theme
+    * Scroll grid under mouse cursor
+    * Move files directly to recycle bin without parent "FFS 2012-05-15 131513" temporary folders
+    * Offer $HOME directory alias in directory dropdown list (Linux)
+    * Support for tilde (~) character in input folder paths (Linux)
+    * New environment variables for RealtimeSync: %change_action%, "%change_path%
+    * Use Internet Explorer proxy settings for new version check (Windows)
+    * Show proper error message after failed symlink creation
+    * Start comparison upon double-clicking config list
+    * New batch return code: "Synchronization completed with warnings"
+    * Hide files that won't be copied by default if direction "none" is part of the rule set (e.g. update variant)
+    * Remember save config and folder picker dialog positions separately
+    * New sync completion sound
+    * Fixed sync completion sound not playing (Ubuntu)
+
+ -- Damien Lecan <dev@dlecan.com>  Thu, 11 Nov 2012 15:12:13 +0100
+
 freefilesync (5.8-0ubuntu1~quantal) quantal; urgency=low
 
   * New package: freefilesync. (LP: #597694)
