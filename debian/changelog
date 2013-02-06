@@ -1,3 +1,22 @@
+freefilesync (5.12-0ubuntu1~quantal) quantal; urgency=low
+
+  * New package: freefilesync. (LP: #597694)
+  * New upstream version: FFS 5.11
+    * Dynamic statistics adjustment during synchronization
+    * Allow to save active view filter settings as default (context menu)
+    * Stay responsive while checking recycle bin existence on slow disks
+    * Reset option "Delete on both sides" upon each manual deletion
+    * Added context menu to allow deletion of last used configurations
+    * Support numpad add/subtract keys for overview tree
+    * Revised external application integration
+    * Call external applications for multiple selected items
+    * Automatically schedule abandoned recycle bin temp directories (.ffs_tmp) for deletion
+    * Binary comparison speed estimate considers errors and short-circuit evaluation
+    * Use full time window of sync phase when calculating overall speed
+    * Added Arabic language
+
+ -- Damien Lecan <dev@dlecan.com>  Wed, 06 Feb 2013 21:44:13 +0100
+
 freefilesync (5.11-0ubuntu1~quantal) quantal; urgency=low
   
   * New package: freefilesync. (LP: #597694)
