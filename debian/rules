@@ -69,12 +69,19 @@ override_dh_auto_install:
 	convert RealtimeSync/RealtimeSync.ico[3] $(IMGDIR)/16x16/apps/realtimesync.png
 	convert RealtimeSync/RealtimeSync.ico[3] $(IMGDIR)/16x16/mimetypes/application-x-freefilesync-real.png
     
-	# FreeFileSync Batch
+	# FreeFileSync Batch icon
 	convert lib/Batch.ico[0] $(IMGDIR)/256x256/mimetypes/application-x-freefilesync-batch.png
 	convert lib/Batch.ico[1] $(IMGDIR)/128x128/mimetypes/application-x-freefilesync-batch.png
 	convert lib/Batch.ico[2] $(IMGDIR)/48x48/mimetypes/application-x-freefilesync-batch.png
 	convert lib/Batch.ico[3] $(IMGDIR)/32x32/mimetypes/application-x-freefilesync-batch.png
 	convert lib/Batch.ico[4] $(IMGDIR)/16x16/mimetypes/application-x-freefilesync-batch.png	
+
+	# FreeFileSync DB icon
+	convert lib/SyncDB.ico[0] $(IMGDIR)/256x256/mimetypes/application-x-freefilesync-db.png
+	convert lib/SyncDB.ico[1] $(IMGDIR)/128x128/mimetypes/application-x-freefilesync-db.png
+	convert lib/SyncDB.ico[2] $(IMGDIR)/48x48/mimetypes/application-x-freefilesync-db.png
+	convert lib/SyncDB.ico[3] $(IMGDIR)/32x32/mimetypes/application-x-freefilesync-db.png
+	convert lib/SyncDB.ico[4] $(IMGDIR)/16x16/mimetypes/application-x-freefilesync-db.png
 
 	# Build desktop files
 	mkdir -p $(DESTRESDIR)/usr/share/applications
