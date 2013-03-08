@@ -15,4 +15,9 @@
 		<comment xml:lang="fr">Fichier de batch FreeFileSync</comment>
 		<glob pattern="*.ffs_batch"/>
 	</mime-type>
+	<mime-type type="application/x-freefilesync-db">
+		<comment>FreeFileSync database file</comment>
+		<comment xml:lang="fr">Fichier de base de données FreeFileSync</comment>
+		<glob pattern="*.ffs_db"/>
+	</mime-type>
 </mime-info>

@@ -1,7 +1,27 @@
+freefilesync (5.13-0ubuntu1~quantal) quantal; urgency=low
+
+  * New package: freefilesync. (LP: #597694)
+  * New FFS DB icon association
+  * New build flag
+  * New upstream version: FFS 5.13
+    * Prepared support for new build on Mac OS X
+    * Time out for not existing directories after 10 seconds
+    * Check directory existence in parallel
+    * Inform about all missing directories via a single error message
+    * Show remaining time considering relative error of 10%
+    * Check for grid icon updates only when needed
+    * Revised directory lock process detection
+    * Implemented high resolution icons
+    * Accessibility: fixed unreadable labels
+    * More polished user interfaces
+    * Fixed time stamp not being set on NFS/Samba shares (Linux)
+
+ -- Damien Lecan <dev@dlecan.com>  Wed, 08 Mar 2013 16:52:46 +0100
+
 freefilesync (5.12-0ubuntu1~quantal) quantal; urgency=low
 
   * New package: freefilesync. (LP: #597694)
-  * New upstream version: FFS 5.11
+  * New upstream version: FFS 5.12
     * Dynamic statistics adjustment during synchronization
     * Allow to save active view filter settings as default (context menu)
     * Stay responsive while checking recycle bin existence on slow disks
