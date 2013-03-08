@@ -18,6 +18,9 @@ export DEB_DEBIAN_DIR=$(dir $(firstword $(MAKEFILE_LIST)))
 export DEB_UPSTREAM_VERSION=$(shell dpkg-parsechangelog -l$(DEB_DEBIAN_DIR)/changelog \
                                | sed -rne 's,^Version: ([^-]+).*,\1,p')
 
+# Special flag for Ubuntu package build
+export BUILD=Launchpad
+
 %:
 	dh $@
 
