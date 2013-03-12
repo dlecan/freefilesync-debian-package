@@ -1,3 +1,11 @@
+freefilesync (5.13.1-0ubuntu1~quantal) quantal; urgency=low
+
+  * New package: freefilesync. (LP: #597694)
+  * New unofficial upstream version: FFS 5.13.1
+    * Fix compilation issue
+
+ -- Damien Lecan <dev@dlecan.com>  Tue, 12 Mar 2013 10:20:03 +0100
+
 freefilesync (5.13-0ubuntu1~quantal) quantal; urgency=low
 
   * New package: freefilesync. (LP: #597694)
