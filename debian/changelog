@@ -1,3 +1,10 @@
+freefilesync (5.13.2-0ubuntu3~precise) precise; urgency=low
+
+  * New package: freefilesync. (LP: #597694)
+  * Upgrade to GCC-4.7 package
+
+ -- Damien Lecan <dev@dlecan.com>  Wed, 20 Mar 2013 21:31:59 +0100
+
 freefilesync (5.13.2-0ubuntu2~precise) precise; urgency=low
 
   * New package: freefilesync. (LP: #597694)
