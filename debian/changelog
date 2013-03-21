@@ -1,3 +1,10 @@
+freefilesync (5.13.2-0ubuntu4~precise) precise; urgency=low
+
+  * New package: freefilesync. (LP: #597694)
+  * Need dependency on g++ 4.7 package
+
+ -- Damien Lecan <dev@dlecan.com>  Wed, 20 Mar 2013 11:40:16 +0100
+
 freefilesync (5.13.2-0ubuntu3~precise) precise; urgency=low
 
   * New package: freefilesync. (LP: #597694)
