@@ -1,0 +1,13 @@
+Index: freefilesync_5.13.2/Makefile
+===================================================================
+--- freefilesync_5.13.2.orig/Makefile	2013-03-12 17:16:10.000000000 +0100
++++ freefilesync_5.13.2/Makefile	2013-03-24 22:02:17.071794588 +0100
+@@ -15,7 +15,7 @@
+ 
+ #################### Linux ############################
+ ifeq ($(OPERATING_SYSTEM_NAME), Linux)
+-COMPILER_BIN=g++ -pthread
++COMPILER_BIN=g++-4.7 -pthread
+ CPPFLAGS += -DFFS_LINUX
+ 
+ #Gtk - support recycler/icon loading/no button border/grid scrolling
