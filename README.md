@@ -5,6 +5,7 @@ This is the Debian and Ubuntu packaging project for FreeFileSync (http://freefil
 ## Packages
 
 Ubuntu packages can be found as an Ubuntu PPA: https://launchpad.net/~freefilesync/+archive/ffs
+
 For Debian, you need to build them yourself from FreeFileSync sources.
 
 ## Support
