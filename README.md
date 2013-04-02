@@ -17,4 +17,4 @@ Report issues with FreeFileSync itself here : http://freefilesync.sourceforge.ne
 
 * "ubuntu-precise" branch : FFS package for Ubuntu Precise 12.04
 * "ubuntu-quantal" branch : FFS package for Ubuntu Quantal 12.10
-* "ubuntu-raring" branch : FFS package for Ubuntu Raing 13.04
+* "ubuntu-raring" branch : FFS package for Ubuntu Raring 13.04
