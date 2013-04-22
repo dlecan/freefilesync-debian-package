@@ -25,7 +25,7 @@ freefilesync (5.14-0ubuntu0~quantal) quantal; urgency=low
     * Fit grid row label to match wide font sizes
     * Added macros %csidl_Downloads%, %csidl_PublicDownloads%, %csidl_QuickLaunch% (Windows Vista and later)
 
- -- Damien Lecan <dev@dlecan.com>  Thue, 02 Apr 2013 13:28:41 +0200
+ -- Damien Lecan <dev@dlecan.com>  Thu, 02 Apr 2013 13:28:41 +0200
 
 freefilesync (5.13.2-0ubuntu2~quantal) quantal; urgency=low
 
