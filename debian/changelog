@@ -1,4 +1,4 @@
-freefilesync (5.14-0ubuntu0~precise) precise; urgency=low
+freefilesync (5.14-0ubuntu0~quantal) quantal; urgency=low
 
   * New package: freefilesync. (LP: #597694)
   * New upstream version: FFS 5.14
