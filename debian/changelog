@@ -1,3 +1,10 @@
+freefilesync (5.13.2-0ubuntu6~precise) precise; urgency=low
+
+  * New package: freefilesync. (LP: #597694)
+  * Upgrade to Boost 1.49
+
+ -- Damien Lecan <dev@dlecan.com>  Wed, 24 Apr 2013 19:45:34 +0100
+
 freefilesync (5.13.2-0ubuntu5~precise) precise; urgency=low
 
   * New package: freefilesync. (LP: #597694)
