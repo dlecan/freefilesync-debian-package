@@ -1,3 +1,10 @@
+freefilesync (5.14-0ubuntu2~precise) precise; urgency=low
+
+  * New package: freefilesync. (LP: #597694)
+  * Upgrade to GCC-4.7 package, even for subproject RealtimeSync
+
+ -- Damien Lecan <dev@dlecan.com>  Wed, 24 Apr 2013 21:43:34 +0200
+
 freefilesync (5.14-0ubuntu1~precise) precise; urgency=low
 
   * New package: freefilesync. (LP: #597694)
