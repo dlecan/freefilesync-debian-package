@@ -1,3 +1,32 @@
+freefilesync (5.14-0ubuntu1~precise) precise; urgency=low
+
+  * New package: freefilesync. (LP: #597694)
+  * New upstream version: FFS 5.14
+    * Do not process child elements when parent directory creation fails
+    * Start comparison after pressing Enter in directory input fields
+    * Lead grid is determined via keyboard input instead of input focus change
+    * Ignore empty directory entries in RealtimeSync
+    * Restored mouse cursor "snap to default button"
+    * Implemented file icon support for sync preview (OS X)
+    * RealtimeSync exit via menu working again
+    * Restore main dialog even if "close progress dialog" is selected
+    * Show full path when failing to create directory on not existing target drive
+    * Middle grid tool tip shown correctly again (Suse Linux/X11)
+    * Prevent process hang when manually writing to directory history (Linux and OS X, wxWidgets 2.9.4)
+    * Resolved crash after showing help dialog (OS X)
+    * Properly handle non-ASCII characters for external commands (OS X)
+    * Support UTF8 format restrictions on file systems like HFS (OS X)
+    * Do not stretch small thumbnail icons (Linux)
+    * Use 32x32 instead of 48x48 as medium icon size on Windows XP
+    * Properly size non-jumbo icons in thumbnail view (Windows Vista and later)
+    * Reduced GDI resources for file icon buffer (Windows)
+    * Automatically check for updates weekly without showing popup on first start
+    * Restored program logo in systray progress indicatord
+    * Fit grid row label to match wide font sizes
+    * Added macros %csidl_Downloads%, %csidl_PublicDownloads%, %csidl_QuickLaunch% (Windows Vista and later)
+
+ -- Damien Lecan <dev@dlecan.com>  Wed, 24 Apr 2013 20:43:13 +0200
+
 freefilesync (5.13.2-0ubuntu6~precise) precise; urgency=low
 
   * New package: freefilesync. (LP: #597694)
