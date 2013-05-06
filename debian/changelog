@@ -1,3 +1,36 @@
+freefilesync (5.15-0ubuntu1~raring) raring; urgency=low
+
+  * New package: freefilesync. (LP: #597694)
+  * New upstream version: FFS 5.15
+    * how status message while checking for program updates
+    * Faster startup times through asynchronous config file checking
+    * Automatically migrate configuration files to new format
+    * New context menu options to copy and paste filter settings
+    * Support file and folder names with trailing space or period characters
+    * Do not show superfluous scrollbars for multiple folder pairs
+    * Correctly show long file paths when moving to recycle bin failed (Windows Vista and later)
+    * Status feedback before blocking while creating a Volume Shadow Copy
+    * Do not show dummy texts while initializing progress dialog (OS X)
+    * Allow to maximize filter dialog
+    * New column for item count on overview panel
+    * Allow CTRL + C to copy selection to clipboard on overview panel
+    * Consider current view filter for file selection on overview panel
+    * Workaround silent failure to set modification times on NTFS volumes (Linux)
+    * Avoid main dialog flash when closing progress dialog (Linux)
+    * Do not show middle grid tooltip when dragging outside visible area
+    * Reduced file accesses when loading XML files
+    * Simplified structure of GlobalSettings.xml
+    * Allow to change default exclusion filter via GlobalSettings.xml: "DefaultExclusionFilter"
+    * Split filter entries over multiple rows in ffs_gui/ffs_batch XML files
+    * Resolved failed assert during startup (ReactOS)
+    * Create directory locks after one-time existence check
+    * Show warning when locking directory failed
+    * Reset main dialog layout to fix top panel default height being too small
+    * New help file topic "Expert Settings"
+    * Updated translation files
+
+ -- Damien Lecan <dev@dlecan.com>  Mon, 06 May 2013 21:44:11 +0200
+
 freefilesync (5.14.1-0ubuntu0~raring) raring; urgency=low
 
   * New package: freefilesync. (LP: #597694)
