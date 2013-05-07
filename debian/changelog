@@ -1,3 +1,10 @@
+freefilesync (5.15-0ubuntu2~raring) raring; urgency=low
+
+  * New package: freefilesync. (LP: #597694)
+  * Update PPA depencies
+
+ -- Damien Lecan <dev@dlecan.com>  Tue, 07 May 2013 10:13:26 +0200
+
 freefilesync (5.15-0ubuntu1~raring) raring; urgency=low
 
   * New package: freefilesync. (LP: #597694)
