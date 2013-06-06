@@ -1,3 +1,38 @@
+freefilesync (5.16-0ubuntu1~quantal) quantal; urgency=low
+
+  * New package: freefilesync. (LP: #597694)
+  * New upstream version: FFS 5.16
+    * Integrated both category and sync action view into middle grid
+    * Condensed folder pair display names on overview panel
+    * Consider symlinks and junctions when copying locked files (Windows Vista)
+    * Resolved failure to set directory lock within Windows XP as Virtual Box guest
+    * Period resolves to working directory again
+    * Fixed "DecodePointer could not be located in KERNEL32.dll" (Windows 2000)
+    * Support closing progress dialog forcefully during sync (OS X)
+    * Don't disable all child items if directory traversal fails for a single item only
+    * Simplified deletion confirmation dialog (removed "delete on both sides")
+    * Work around wxWidgets leaking memory on exit (OS X)
+    * Avoid wxWidgets crash when deleting folder pair control (OS X)
+    * Prevent wxWidgets corrupting stack when wxLocale is allocated statically (Linux)
+    * Use GetUserDefaultLangID to determine installer default language
+    * Avoid progress speed and remaining time jitter
+    * Check existence only once for duplicate base directories
+    * Detect invalid file symlinks pointing to directories
+    * Disable unsuitable buttons in pop up dialogs when checkbox is set
+    * Copy folder attributes if source is a junction already on Windows XP instead of Vista
+    * Mark failed UTF conversions with replacement character
+    * Do not restore main dialog position outside visible screen area (multi monitor setup)
+    * Support detection of moved files through symlinks
+    * Reduced memory consumption when detecting moved files
+    * Check for duplicate file ids when detecting renamed files
+    * Redetermine volume id for followed directory symlinks
+    * Removed "Compare_Complete.wav"
+    * Don't accept file deletion confirmation in less than 50ms
+    * Systematically resolved translation bugs
+    * Added Serbian language
+
+ -- Damien Lecan <dev@dlecan.com>  Thu, 06 Jun 2013 14:59:13 +0200
+
 freefilesync (5.15-0ubuntu1~quantal) quantal; urgency=low
 
   * New package: freefilesync. (LP: #597694)
