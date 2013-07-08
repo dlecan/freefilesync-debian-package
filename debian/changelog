@@ -1,3 +1,36 @@
+freefilesync (5.18-0ubuntu1~precise) precise; urgency=low
+
+  * New package: freefilesync. (LP: #597694)
+  * New upstream version: FFS 5.18
+    * Work around boost 1.54 bug "Procedure Entry Point Not Found in Kernel32.dll" (Windows XP)
+  * New upstream version: FFS 5.17
+  Consider target file when updating followed file symlinks
+    * Support moving files to recycle bin contained in followed directory symlinks
+    * Move instead of copy updated files into versioning directory
+    * Reduced memory peak when loading large database files after comparison
+    * Check recycle bin existence only once per base folder and only if deletions occur (Windows)
+    * Revised and enhanced error messages
+    * Show moved files in same category as updated files
+    * More pessimistic calculation of required disk space reducing false positives
+    * Implemented platform-specific standard button ordering (Linux, OS X)
+    * Set configuration panel primary orientation to vertical
+    * Added new checks and error message strings for translation file parser
+    * Revised middle grid inactive color and duplicate equality symbol
+    * Skip XML comments while parsing config files
+    * Redesigned confirmation popup dialogs
+    * Standard button spacing conforms to operating system conventions
+    * Shrinked memory consumption of file hierarchy data structures
+    * Don't show file deletion dialog if selection is empty
+    * Fixed incorrect progress statistics if a file or directory is deleted externally after comparison
+    * Focus grid cursor row after switching sides with keyboard direction keys
+    * Improved localization process: find translation deltas more easily, better error reporting
+    * Reset initiated grid selection when changing grid cursor
+    * Improved sync progress dialog layout
+    * Don't show busy cursor on synchronization results dialog
+    * Log error message upon retry as type info only
+
+ -- Damien Lecan <dev@dlecan.com>  Mon, 08 Jul 2013 11:03:45 +0200
+
 freefilesync (5.16-0ubuntu1~precise) precise; urgency=low
 
   * New package: freefilesync. (LP: #597694)
