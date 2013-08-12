@@ -1,3 +1,32 @@
+freefilesync (5.20-0ubuntu1~precise) precise; urgency=low
+
+  * New package: freefilesync. (LP: #597694)
+  * New upstream version: FFS 5.20
+    * Fixed crash on startup due to wxWigets 64-bit bug in font enumeration (Windows 8)
+  * New upstream version: FFS 5.19
+    * Consider target file when updating followed file symlinks
+    * Redesigned progress dialog including new items graph
+    * New command line syntax: set directory names of a .ffs_gui/.ffs_batch externally
+    * Explicit button on progress dialog to minimize to systray
+    * Fixed progress graph labels being truncated (Debian, Ubuntu, openSUSE)
+    * Resolved main dialog z-order issues during sync (OS X)
+    * Reduced progress dialog layout twitching
+    * Further improved comparison speed by 10%
+    * Use proper config file path in file picker dialog (OS X)
+    * Never interrupt when updating a file with fail-safe file copy after target was deleted
+    * Prevent crash when closing progress dialog while paused (OS X)
+    * Support external command lines starting with whitespace (Windows)
+    * Show warning before starting external applications for more than 10 items
+    * Start external applications synchronously if needed to avoid running out of system resources
+    * Don't show hidden progress dialog when showing an error message in silent batch mode (OS X)
+    * Correctly show file names containing ampersand characters in progress dialog
+    * Adapt size of results dialog to fit contents
+    * Correctly execute file move before parent directory will be deleted
+    * Show a blinking system tray icon on errors instead of a modal dialog in RealtimeSync
+    * Added installation size for Windows' Add/Remove Programs
+
+ -- Damien Lecan <dev@dlecan.com>  Mon, 12 Aug 2013 10:18:03 +0200
+
 freefilesync (5.18-0ubuntu1~precise) precise; urgency=low
 
   * New package: freefilesync. (LP: #597694)
