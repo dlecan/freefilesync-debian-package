@@ -6,7 +6,7 @@
  ifeq ($(OPERATING_SYSTEM_NAME), Linux)
 -COMPILER_BIN=g++ -pthread
 +COMPILER_BIN=g++-4.7 -pthread
- CXXFLAGS += -DFFS_LINUX
+ CXXFLAGS += -DZEN_LINUX
  
  #Gtk - support recycler/icon loading/no button border/grid scrolling
 --- a/RealtimeSync/Makefile
@@ -17,6 +17,6 @@
  ifeq ($(OPERATING_SYSTEM_NAME), Linux)
 -COMPILER_BIN=g++ -pthread
 +COMPILER_BIN=g++-4.7 -pthread
- CXXFLAGS += -DFFS_LINUX
+ CXXFLAGS += -DZEN_LINUX
  
  #Gtk - support "no button border"
