@@ -1,3 +1,47 @@
+freefilesync (5.21-0ubuntu3~precise) precise; urgency=low
+
+  * New package: freefilesync. (LP: #597694)
+  * Add new dependencies: libxxf86vm-dev and libtiff4-dev
+
+ -- Damien Lecan <dev@dlecan.com>  Fri, 06 Sep 2013 22:01:23 +0200
+
+freefilesync (5.21-0ubuntu2~precise) precise; urgency=low
+
+  * New package: freefilesync. (LP: #597694)
+  * Force dependency against WxWidget 2.9.4
+
+ -- Damien Lecan <dev@dlecan.com>  Fri, 06 Sep 2013 21:44:11 +0200
+
+freefilesync (5.21-0ubuntu1~precise) precise; urgency=low
+
+  * New package: freefilesync. (LP: #597694)
+  * New upstream version: FFS 5.21
+    * Detect moved/renamed files in mirror and custom variants
+    * New database format for two way variant: old database files are converted automatically
+    * Support double-clicking ffs_gui/ffs_batch files (OS X)
+    * Integrated search panel (Ctrl + F, F3) into main dialog
+    * Merged variant names into top button labels
+    * Hide dock icon while minimized to notification area (OS X)
+    * New keyboard shortcuts: F5, F6, F7, F8, F9, F10
+    * Further reduced size of database files by 10%
+    * Fixed Outlook *.ost files found missing on VSS snapshot volumes
+    * Added include filter context menu option
+    * Correctly scroll to search hits on different grid
+    * Always remove .ffs_tmp files permanently
+    * Fixed layout for buttons with text and graphics for RTL languages (Arabic, Hebrew)
+    * Revised file filter parser: new syntax for excluding items in subdirectories
+    * Improved configuration merge algorithm
+    * Fixed crash when showing help due to wxWigets 64-bit bug in help component (Windows 8)
+    * Avoid progress dialog graph flicker during resize when too few samples are available
+    * Progress status when deleting files not greyed out anymore
+    * Increased time-out to 20 seconds when checking for directory existence
+    * Exclude broken symlinks via filter before showing error message
+    * Follow symlinks when checking file/directory existence (Linux)
+    * Consistently set batch error codes during startup phase
+    * Updated translation files
+
+ -- Damien Lecan <dev@dlecan.com>  Fri, 06 Sep 2013 21:12:59 +0200
+
 freefilesync (5.20-0ubuntu1~precise) precise; urgency=low
 
   * New package: freefilesync. (LP: #597694)
