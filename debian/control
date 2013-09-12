@@ -5,7 +5,7 @@ Maintainer: Damien Lecan <dev@dlecan.com>
 Build-Depends: debhelper (>= 9),
                pkg-config,
                autotools-dev,
-               libwxgtk2.8-dev,
+               libwxgtk2.9-dev (>= 2.9.4),
                libgtk2.0-dev,
                imagemagick,
                intltool,
@@ -13,7 +13,9 @@ Build-Depends: debhelper (>= 9),
                libboost-system-dev (>= 1.49),
                libunity-dev,
                gcc (>= 4:4.7),
-               zlib1g-dev
+               zlib1g-dev,
+               libxxf86vm-dev,
+               libtiff4-dev
 Standards-Version: 3.9.4
 Homepage: http://freefilesync.sourceforge.net/
 
