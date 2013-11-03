@@ -1,3 +1,44 @@
+freefilesync (5.23-0ubuntu1~quantal) quantal; urgency=low
+
+  * New package: freefilesync. (LP: #597694)
+  * New upstream version: FFS 5.23
+    * Allow sorting root nodes on overview panel
+    * Support retry on failure to resolve path by volume name
+    * Copy high-precision modification times for files and symlinks
+    * Align top panel height with comparison and sync buttons
+    * Show lock owner while waiting on a locked directory
+    * Resolved help file W3C validation issues
+    * Fixed high contrast accessibility issues in help
+    * Fixed crash for CPUs without SSE2 when using VSS (Windows XP)
+    * Prevent progress statistics timer overflow
+    * Save RealtimeSync settings before forced exit due to shutdown or log off
+    * Resolved contract violation error due to out of memory
+    * RealtimeSync does not block system shutdown anymore
+    * Added "select all" context menu option for progess log
+    * Handle progress log keyboard input ignoring input focus
+    * Fixed category icon background color issues
+    * Report error when reading active config file failed during save
+    * Preload adjacent file icons on grid
+  * New upstream version: FFS 5.22
+    * New options for automatic retry after error
+    * Improved compliance with Windows User Experience guidelines
+    * Harmonized popup dialog layouts
+    * Correctly show program menu when main dialog receives focus (OS X)
+    * Revised configuration dialog layouts and designs
+    * Fixed crash on startup for CPUs without SSE2 support (Windows XP)
+    * Work around wxWidgets bug for sorted list boxes (Linux)
+    * Updated and revised help file
+    * Early parameter validation for filter and sync config dialogs
+    * Fixed followed directory symlinks being incorrectly excluded
+    * Automatically calculate best initial message box size
+    * Progress graph and status icons support high contrast color schemes
+    * Include directory child-elements when manually setting filter
+    * Allow manual filter for short name on overview panel
+    * Don't treat file drops on directory input fields as URI (Linux)
+    * Updated translation files
+
+ -- Damien Lecan <dev@dlecan.com>  Sun, 03 Nov 2013 21:16:22 +0100
+
 freefilesync (5.21-0ubuntu3~quantal) quantal; urgency=low
 
   * New package: freefilesync. (LP: #597694)
