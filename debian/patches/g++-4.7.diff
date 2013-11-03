@@ -1,5 +1,5 @@
---- a/Makefile
-+++ b/Makefile
+--- a/FreeFileSync/Source/Makefile
++++ b/FreeFileSync/Source/Makefile
 @@ -15,7 +15,7 @@
  
  #################### Linux ############################
@@ -9,8 +9,8 @@
  CXXFLAGS += -DZEN_LINUX
  
  #Gtk - support recycler/icon loading/no button border/grid scrolling
---- a/RealtimeSync/Makefile
-+++ b/RealtimeSync/Makefile
+--- a/FreeFileSync/Source/RealtimeSync/Makefile
++++ b/FreeFileSync/Source/RealtimeSync/Makefile
 @@ -12,7 +12,7 @@
  
  #################### Linux ############################
