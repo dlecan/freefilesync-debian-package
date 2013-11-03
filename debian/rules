@@ -21,20 +21,23 @@ export DEB_UPSTREAM_VERSION=$(shell dpkg-parsechangelog -l$(DEB_DEBIAN_DIR)/chan
 # Special flag for Ubuntu package build
 export BUILD=Launchpad
 
+export FFS_SOURCES=FreeFileSync/Source
+export RTS_SOURCES=$(FFS_SOURCES)/RealtimeSync
+
 %:
 	dh $@
 
 override_dh_auto_clean:
-	dh_auto_clean
-	dh_auto_clean --sourcedirectory=RealtimeSync
+	dh_auto_clean --sourcedirectory=$(FFS_SOURCES)
+	dh_auto_clean --sourcedirectory=$(RTS_SOURCES)
 
 override_dh_auto_build:
-	dh_auto_build
-	dh_auto_build --sourcedirectory=RealtimeSync
+	dh_auto_build --sourcedirectory=$(FFS_SOURCES)
+	dh_auto_build --sourcedirectory=$(RTS_SOURCES)
 	
 override_dh_auto_install:
-	dh_auto_install
-	dh_auto_install --sourcedirectory=RealtimeSync
+	dh_auto_install --sourcedirectory=$(FFS_SOURCES)
+	dh_auto_install --sourcedirectory=$(RTS_SOURCES)
 	
 	# Extract program icons
 	mkdir -p $(IMGDIR)/256x256/apps
@@ -49,42 +52,42 @@ override_dh_auto_install:
 	mkdir -p $(IMGDIR)/16x16/mimetypes
 	
 	# FreeFileSync
-	convert lib/FreeFileSync.ico[0] $(IMGDIR)/256x256/apps/freefilesync.png
-	convert lib/FreeFileSync.ico[0] $(IMGDIR)/256x256/mimetypes/application-x-freefilesync-ffs.png
-	convert lib/FreeFileSync.ico[1] $(IMGDIR)/128x128/apps/freefilesync.png
-	convert lib/FreeFileSync.ico[1] $(IMGDIR)/128x128/mimetypes/application-x-freefilesync-ffs.png
-	convert lib/FreeFileSync.ico[2] $(IMGDIR)/48x48/apps/freefilesync.png
-	convert lib/FreeFileSync.ico[2] $(IMGDIR)/48x48/mimetypes/application-x-freefilesync-ffs.png
-	convert lib/FreeFileSync.ico[3] $(IMGDIR)/32x32/apps/freefilesync.png
-	convert lib/FreeFileSync.ico[3] $(IMGDIR)/32x32/mimetypes/application-x-freefilesync-ffs.png
-	convert lib/FreeFileSync.ico[4] $(IMGDIR)/16x16/apps/freefilesync.png
-	convert lib/FreeFileSync.ico[4] $(IMGDIR)/16x16/mimetypes/application-x-freefilesync-ffs.png
+	convert $(FFS_SOURCES)/lib/FreeFileSync.ico[0] $(IMGDIR)/256x256/apps/freefilesync.png
+	convert $(FFS_SOURCES)/lib/FreeFileSync.ico[0] $(IMGDIR)/256x256/mimetypes/application-x-freefilesync-ffs.png
+	convert $(FFS_SOURCES)/lib/FreeFileSync.ico[1] $(IMGDIR)/128x128/apps/freefilesync.png
+	convert $(FFS_SOURCES)/lib/FreeFileSync.ico[1] $(IMGDIR)/128x128/mimetypes/application-x-freefilesync-ffs.png
+	convert $(FFS_SOURCES)/lib/FreeFileSync.ico[2] $(IMGDIR)/48x48/apps/freefilesync.png
+	convert $(FFS_SOURCES)/lib/FreeFileSync.ico[2] $(IMGDIR)/48x48/mimetypes/application-x-freefilesync-ffs.png
+	convert $(FFS_SOURCES)/lib/FreeFileSync.ico[3] $(IMGDIR)/32x32/apps/freefilesync.png
+	convert $(FFS_SOURCES)/lib/FreeFileSync.ico[3] $(IMGDIR)/32x32/mimetypes/application-x-freefilesync-ffs.png
+	convert $(FFS_SOURCES)/lib/FreeFileSync.ico[4] $(IMGDIR)/16x16/apps/freefilesync.png
+	convert $(FFS_SOURCES)/lib/FreeFileSync.ico[4] $(IMGDIR)/16x16/mimetypes/application-x-freefilesync-ffs.png
 	
 	# RealTimeSync
-	convert RealtimeSync/RealtimeSync.ico[0] $(IMGDIR)/256x256/apps/realtimesync.png
-	convert RealtimeSync/RealtimeSync.ico[0] $(IMGDIR)/256x256/mimetypes/application-x-freefilesync-real.png
-	convert RealtimeSync/RealtimeSync.ico[1] $(IMGDIR)/128x128/apps/realtimesync.png
-	convert RealtimeSync/RealtimeSync.ico[1] $(IMGDIR)/128x128/mimetypes/application-x-freefilesync-real.png
-	convert RealtimeSync/RealtimeSync.ico[2] $(IMGDIR)/48x48/apps/realtimesync.png
-	convert RealtimeSync/RealtimeSync.ico[2] $(IMGDIR)/48x48/mimetypes/application-x-freefilesync-real.png
-	convert RealtimeSync/RealtimeSync.ico[3] $(IMGDIR)/32x32/apps/realtimesync.png
-	convert RealtimeSync/RealtimeSync.ico[3] $(IMGDIR)/32x32/mimetypes/application-x-freefilesync-real.png
-	convert RealtimeSync/RealtimeSync.ico[3] $(IMGDIR)/16x16/apps/realtimesync.png
-	convert RealtimeSync/RealtimeSync.ico[3] $(IMGDIR)/16x16/mimetypes/application-x-freefilesync-real.png
+	convert $(RTS_SOURCES)/RealtimeSync.ico[0] $(IMGDIR)/256x256/apps/realtimesync.png
+	convert $(RTS_SOURCES)/RealtimeSync.ico[0] $(IMGDIR)/256x256/mimetypes/application-x-freefilesync-real.png
+	convert $(RTS_SOURCES)/RealtimeSync.ico[1] $(IMGDIR)/128x128/apps/realtimesync.png
+	convert $(RTS_SOURCES)/RealtimeSync.ico[1] $(IMGDIR)/128x128/mimetypes/application-x-freefilesync-real.png
+	convert $(RTS_SOURCES)/RealtimeSync.ico[2] $(IMGDIR)/48x48/apps/realtimesync.png
+	convert $(RTS_SOURCES)/RealtimeSync.ico[2] $(IMGDIR)/48x48/mimetypes/application-x-freefilesync-real.png
+	convert $(RTS_SOURCES)/RealtimeSync.ico[3] $(IMGDIR)/32x32/apps/realtimesync.png
+	convert $(RTS_SOURCES)/RealtimeSync.ico[3] $(IMGDIR)/32x32/mimetypes/application-x-freefilesync-real.png
+	convert $(RTS_SOURCES)/RealtimeSync.ico[3] $(IMGDIR)/16x16/apps/realtimesync.png
+	convert $(RTS_SOURCES)/RealtimeSync.ico[3] $(IMGDIR)/16x16/mimetypes/application-x-freefilesync-real.png
     
 	# FreeFileSync Batch icon
-	convert lib/Batch.ico[0] $(IMGDIR)/256x256/mimetypes/application-x-freefilesync-batch.png
-	convert lib/Batch.ico[1] $(IMGDIR)/128x128/mimetypes/application-x-freefilesync-batch.png
-	convert lib/Batch.ico[2] $(IMGDIR)/48x48/mimetypes/application-x-freefilesync-batch.png
-	convert lib/Batch.ico[3] $(IMGDIR)/32x32/mimetypes/application-x-freefilesync-batch.png
-	convert lib/Batch.ico[4] $(IMGDIR)/16x16/mimetypes/application-x-freefilesync-batch.png	
+	convert $(FFS_SOURCES)/lib/Batch.ico[0] $(IMGDIR)/256x256/mimetypes/application-x-freefilesync-batch.png
+	convert $(FFS_SOURCES)/lib/Batch.ico[1] $(IMGDIR)/128x128/mimetypes/application-x-freefilesync-batch.png
+	convert $(FFS_SOURCES)/lib/Batch.ico[2] $(IMGDIR)/48x48/mimetypes/application-x-freefilesync-batch.png
+	convert $(FFS_SOURCES)/lib/Batch.ico[3] $(IMGDIR)/32x32/mimetypes/application-x-freefilesync-batch.png
+	convert $(FFS_SOURCES)/lib/Batch.ico[4] $(IMGDIR)/16x16/mimetypes/application-x-freefilesync-batch.png
 
 	# FreeFileSync DB icon
-	convert lib/SyncDB.ico[0] $(IMGDIR)/256x256/mimetypes/application-x-freefilesync-db.png
-	convert lib/SyncDB.ico[1] $(IMGDIR)/128x128/mimetypes/application-x-freefilesync-db.png
-	convert lib/SyncDB.ico[2] $(IMGDIR)/48x48/mimetypes/application-x-freefilesync-db.png
-	convert lib/SyncDB.ico[3] $(IMGDIR)/32x32/mimetypes/application-x-freefilesync-db.png
-	convert lib/SyncDB.ico[4] $(IMGDIR)/16x16/mimetypes/application-x-freefilesync-db.png
+	convert $(FFS_SOURCES)/lib/SyncDB.ico[0] $(IMGDIR)/256x256/mimetypes/application-x-freefilesync-db.png
+	convert $(FFS_SOURCES)/lib/SyncDB.ico[1] $(IMGDIR)/128x128/mimetypes/application-x-freefilesync-db.png
+	convert $(FFS_SOURCES)/lib/SyncDB.ico[2] $(IMGDIR)/48x48/mimetypes/application-x-freefilesync-db.png
+	convert $(FFS_SOURCES)/lib/SyncDB.ico[3] $(IMGDIR)/32x32/mimetypes/application-x-freefilesync-db.png
+	convert $(FFS_SOURCES)/lib/SyncDB.ico[4] $(IMGDIR)/16x16/mimetypes/application-x-freefilesync-db.png
 
 	# Build desktop files
 	mkdir -p $(DESTRESDIR)/usr/share/applications
