@@ -1,3 +1,23 @@
+freefilesync (6.0-0ubuntu1~raring) raring; urgency=low
+
+  * New package: freefilesync. (LP: #597694)
+  * New upstream version: FFS 6.0
+    * Revised main dialog panel layout
+    * Show arrow icon for shortcut files and symlinks
+    * Execute the "on completion" command asynchronously
+    * Resolved invalid grid background when context menu is shown
+    * Set negative file time tolerance to disable file time check
+    * Optimized sequence of steps when saving database files
+    * Prevent temporary incorrect statistics after unexpected increase in workload
+    * Fixed default height when mixing panels with and without caption on main dialog
+    * New view filter button "show excluded items"
+    * New keyboard shortcuts for file filter and sync settings
+    * Removed libpng15.so dependency for openSUSE 13.1
+    * Updated help file
+    * Updated translation files
+
+ -- Damien Lecan <dev@dlecan.com>  Thu, 26 Dec 2013 14:38:35 +0100
+
 freefilesync (5.23-0ubuntu1~raring) raring; urgency=low
 
   * New package: freefilesync. (LP: #597694)
