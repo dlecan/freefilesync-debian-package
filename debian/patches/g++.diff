@@ -5,7 +5,7 @@
  #################### Linux ############################
  ifeq ($(OPERATING_SYSTEM_NAME), Linux)
 -COMPILER_BIN=g++ -pthread
-+COMPILER_BIN=g++-4.7 -pthread
++COMPILER_BIN=g++-4.8 -pthread
  CXXFLAGS += -DZEN_LINUX
  
  #Gtk - support recycler/icon loading/no button border/grid scrolling
@@ -16,7 +16,7 @@
  #################### Linux ############################
  ifeq ($(OPERATING_SYSTEM_NAME), Linux)
 -COMPILER_BIN=g++ -pthread
-+COMPILER_BIN=g++-4.7 -pthread
++COMPILER_BIN=g++-4.8 -pthread
  CXXFLAGS += -DZEN_LINUX
  
  #Gtk - support "no button border"

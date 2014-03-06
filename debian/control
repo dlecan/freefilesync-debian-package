@@ -12,7 +12,7 @@ Build-Depends: debhelper (>= 9),
                libboost-thread-dev (>= 1.49),
                libboost-system-dev (>= 1.49),
                libunity-dev,
-               g++-4.7,
+               g++-4.8,
                zlib1g-dev,
                libxxf86vm-dev,
                libtiff4-dev
