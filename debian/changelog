@@ -1,3 +1,10 @@
+freefilesync (6.0-0ubuntu1~trusty) trusty; urgency=low
+
+  * New package: freefilesync. (LP: #597694)
+  * Update packages for Trusty
+
+ -- Damien Lecan <dev@dlecan.com>  Wed, 19 Mar 2011 16:59:12 +0100
+
 freefilesync (6.0-0ubuntu1~saucy) saucy; urgency=low
 
   * New package: freefilesync. (LP: #597694)
