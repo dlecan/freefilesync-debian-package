@@ -1,3 +1,69 @@
+freefilesync (6.5-0ubuntu1~trusty) trusty; urgency=low
+
+  * New package: freefilesync. (LP: #597694)
+
+  * New upstream version: FFS 6.5
+    * Support preview for RAW CR2 image files (Windows Vista and later)
+    * Fixed startup exception when using task scheduler (Windows XP)
+    * Correctly resolve SystemRoot NT path syntax for symbolic links
+    * Fixed incorrect error codes being reported (Windows XP)
+    * Fixed config dialog shortcut key presses getting lost (OS X)
+    * Allow vertical layout for top button panel
+    * Code cleanup: removed support for old database and XML config formats
+    * Center sync progress dialog
+    * Updated help file
+
+  * New upstream version: FFS 6.4
+    * Combined comparison, filter and sync config dialogs
+    * Support alternate GlobalSettings.xml file via command line
+    * Toggle between config panels with F6, F7, F8
+    * Show config status icons in notebook panel caption
+    * Redesigned configuration dialog layouts
+    * Fixed startup error after moving installation directory
+    * Fixed retry on failure to resolve path by volume name
+    * Resolved ERROR_ALREADY_EXISTS when creating temporary recycle bin subdirectory
+    * Added "save as gui job" button on main dialog
+    * Added Bulgarian language
+
+  * New upstream version: FFS 6.3
+    * No wait time anymore while searching for recycle bin (Windows Vista and later)
+    * Revised synchronization progress graph
+    * Clean up "On completion" considering last usage
+    * Fixed CTRL + C keyboard short cut in filter dialog (OS X)
+    * Resolved static initialization order issues
+    * Reduced disk accesses when resolving directory name
+    * Added view filter labels
+    * Updated translation files
+    * Updated help file
+
+  * New upstream version: FFS 6.2
+    * New synchronization progress graph
+    * Skip binary comparison for files excluded via time span or size
+    * Fixed configuration panel ordering for entries starting with numbers
+    * Filled gap after last grid column to cover full window width
+    * Workaround wxWidgets image button bug showing obsolete disabled state
+    * Refined file existence checks to handle restricted permissions
+    * Disable file filter button during comparison
+    * Fixed mouse wheel grid scrolling for GTK2 (Linux)
+    * Avoid dummy texts during progress dialog init (OS X)
+    * Translated external application default commands in global settings
+    * Support cancel while encoding extended time information
+    * Highlight non-zero synchronization statistics
+
+  * New upstream version: FFS 6.1
+    * Released RealtimeSync for OS X
+    * Handle errors loading reference batch config
+    * Disable user mode exception swallowing for Windows 7 SP1
+    * Always exclude root nodes on manual selection when excluded items are hidden
+    * Fixed showing duplicate custom "on completion" commands
+    * Close old directory handle first before executing directory traversal fallback
+    * Show negative batch synchronization result in log file name
+    * Avoid file system race when creating temporary files
+    * Transfer creation and modification times on folder creation
+    * Fixed empty main dialog configuration 
+
+ -- Damien Lecan <dev@dlecan.com>  Thu, 17 May 2014 21:30:02 +0200
+
 freefilesync (6.0-0ubuntu1~trusty) trusty; urgency=low
 
   * New package: freefilesync. (LP: #597694)
