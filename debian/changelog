@@ -1,3 +1,19 @@
+freefilesync (6.6-0ubuntu1~trusty) trusty; urgency=low
+
+  * New package: freefilesync. (LP: #597694)
+  * Fixed large font size standard button layout
+  * Fixed config dialog graphics glitch with large font sizes
+  * Exit FreeFileSync launcher process during update
+  * Exclude temporary files from RealtimeSync monitor
+  * Implement correct standard button spacing (OS X)
+  * Fixed SELinux compilation issue (Linux)
+  * Installer adds RealtimeSync link to desktop (Windows)
+  * Improved makefile (Linux, OS X)
+  * Reduced binary file size (Linux)
+  * Updated translation files
+
+ -- Damien Lecan <dev@dlecan.com>  Mon, 02 Jun 2014 21:05:03 +0200
+
 freefilesync (6.5a-0ubuntu1~trusty) trusty; urgency=low
 
   * New package: freefilesync. (LP: #597694)
