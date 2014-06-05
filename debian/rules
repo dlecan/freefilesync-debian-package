@@ -19,7 +19,7 @@ export DEB_UPSTREAM_VERSION=$(shell dpkg-parsechangelog -l$(DEB_DEBIAN_DIR)/chan
                                | sed -rne 's,^Version: ([^-]+).*,\1,p')
 
 # Special flag for Ubuntu package build
-export BUILD=Launchpad
+BUILD_PARAMS=launchpad
 
 export FFS_SOURCES=FreeFileSync/Source
 export RTS_SOURCES=$(FFS_SOURCES)/RealtimeSync
@@ -32,8 +32,8 @@ override_dh_auto_clean:
 	dh_auto_clean --sourcedirectory=$(RTS_SOURCES)
 
 override_dh_auto_build:
-	dh_auto_build --sourcedirectory=$(FFS_SOURCES)
-	dh_auto_build --sourcedirectory=$(RTS_SOURCES)
+	dh_auto_build --sourcedirectory=$(FFS_SOURCES) -- $(BUILD_PARAMS)
+	dh_auto_build --sourcedirectory=$(RTS_SOURCES) -- $(BUILD_PARAMS)
 	
 override_dh_auto_install:
 	dh_auto_install --sourcedirectory=$(FFS_SOURCES)

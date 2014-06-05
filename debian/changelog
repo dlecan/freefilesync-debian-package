@@ -1,3 +1,10 @@
+freefilesync (6.6-0ubuntu2~trusty) trusty; urgency=low
+
+  * New package: freefilesync. (LP: #597694)
+  * Fix build error
+
+ -- Damien Lecan <dev@dlecan.com>  Mon, 05 Jun 2014 22:10:57 +0200
+
 freefilesync (6.6-0ubuntu1~trusty) trusty; urgency=low
 
   * New package: freefilesync. (LP: #597694)
