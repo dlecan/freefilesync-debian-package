@@ -1,4 +1,4 @@
-freefilesync (7.6-0ubuntu1~trusty) trusty; urgency=low
+freefilesync (7.6-0ubuntu1~wily) wily; urgency=low
 
   * New package: freefilesync. (LP: #597694)
   * New upstream version: FFS 7.6
