@@ -19,7 +19,7 @@ Standards-Version: 3.9.6
 Homepage: http://freefilesync.sourceforge.net/
 
 Package: freefilesync
-Architecture: any
+Architecture: amd64
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          xdg-utils
