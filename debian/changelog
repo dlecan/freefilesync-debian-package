@@ -1,3 +1,24 @@
+freefilesync (7.6u1-0ubuntu5~trusty) trusty; urgency=low
+
+  * New package: freefilesync. (LP: #597694)
+  * Add missing g++ dependency
+
+ -- Damien Lecan <dev@dlecan.com>  Fri, 07 Nov 2015 07:16:11 +0100
+
+freefilesync (7.6u1-0ubuntu4~trusty) trusty; urgency=low
+
+  * New package: freefilesync. (LP: #597694)
+  * Patch FFS Makefiles in order to use g++ 4.9
+
+ -- Damien Lecan <dev@dlecan.com>  Fri, 07 Nov 2015 07:16:11 +0100
+
+freefilesync (7.6u1-0ubuntu3~trusty) trusty; urgency=low
+
+  * New package: freefilesync. (LP: #597694)
+  * Update compiler dependency
+
+ -- Damien Lecan <dev@dlecan.com>  Fri, 07 Nov 2015 06:56:33 +0100
+
 freefilesync (7.6u1-0ubuntu2~trusty) trusty; urgency=low
 
   * New package: freefilesync. (LP: #597694)

@@ -1,0 +1,31 @@
+Force g++-4.9
+--- a/FreeFileSync/Source/Makefile
++++ b/FreeFileSync/Source/Makefile
+@@ -96,10 +96,10 @@
+ 
+ ../Obj/FFS_GCC_Make_Release/ffs/src/%.o : %.cpp
+ 	mkdir -p $(dir $@)
+-	g++ $(CXXFLAGS) -c $< -o $@
++	g++-4.9 $(CXXFLAGS) -c $< -o $@
+ 
+ FreeFileSync: $(OBJECT_LIST)
+-	g++ -o ../Build/$(APPNAME) $(OBJECT_LIST) $(LINKFLAGS)
++	g++-4.9 -o ../Build/$(APPNAME) $(OBJECT_LIST) $(LINKFLAGS)
+ 
+ clean:
+ 	rm -rf ../Obj/FFS_GCC_Make_Release
+--- a/FreeFileSync/Source/RealtimeSync/Makefile
++++ b/FreeFileSync/Source/RealtimeSync/Makefile
+@@ -45,10 +45,10 @@
+ 
+ ../../Obj/RTS_GCC_Make_Release/ffs/src/rts/%.o : %.cpp
+ 	mkdir -p $(dir $@)
+-	g++ $(CXXFLAGS) -c $< -o $@
++	g++-4.9 $(CXXFLAGS) -c $< -o $@
+ 
+ RealtimeSync: $(OBJECT_LIST)
+-	g++ -o ../../Build/$(APPNAME) $(OBJECT_LIST) $(LINKFLAGS)
++	g++-4.9 -o ../../Build/$(APPNAME) $(OBJECT_LIST) $(LINKFLAGS)
+ 
+ clean:
+ 	rm -rf ../../Obj/RTS_GCC_Make_Release
