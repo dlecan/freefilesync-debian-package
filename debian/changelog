@@ -1,9 +1,23 @@
+freefilesync (7.6u1-0ubuntu1~wily) wily; urgency=low
+
+  * New package: freefilesync. (LP: #597694)
+  * New upstream version: FFS 7.6u1 (ZenXML v2.3 included)
+
+ -- Damien Lecan <dev@dlecan.com>  Fri, 07 Nov 2015 06:01:54 +0100
+
+freefilesync (7.6-0ubuntu2~wily) wily; urgency=low
+
+  * New package: freefilesync. (LP: #597694)
+  * New upstream version: FFS 7.6
+
+ -- Damien Lecan <dev@dlecan.com>  Fri, 06 Nov 2015 23:12:41 +0100
+
 freefilesync (7.6-0ubuntu1~wily) wily; urgency=low
 
   * New package: freefilesync. (LP: #597694)
   * New upstream version: FFS 7.6
 
- -- Damien Lecan <dev@dlecan.com>  Fri, 06 Nov 2015 21:50:17 +0200
+ -- Damien Lecan <dev@dlecan.com>  Fri, 06 Nov 2015 21:50:17 +0100
 
 freefilesync (6.9-0ubuntu1~trusty) trusty; urgency=low
 
