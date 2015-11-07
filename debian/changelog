@@ -1,3 +1,10 @@
+freefilesync (7.6u1-0ubuntu2~trusty) trusty; urgency=low
+
+  * New package: freefilesync. (LP: #597694)
+  * Restrict to amd64 architecture
+
+ -- Damien Lecan <dev@dlecan.com>  Fri, 07 Nov 2015 06:35:02 +0100
+
 freefilesync (7.6u1-0ubuntu1~trusty) trusty; urgency=low
 
   * New package: freefilesync. (LP: #597694)
