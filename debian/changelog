@@ -1,3 +1,10 @@
+freefilesync (7.7-0ubuntu1~wily) wily; urgency=low
+
+  * New package: freefilesync. (LP: #597694)
+  * New upstream version: FFS 7.7 (ZenXML v2.3 included)
+
+ -- Damien Lecan <dev@dlecan.com>  Thu, 03 Dec 2015 21:15:03 +0100
+
 freefilesync (7.6u1-0ubuntu1~wily) wily; urgency=low
 
   * New package: freefilesync. (LP: #597694)
