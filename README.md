@@ -1,5 +1,7 @@
 ## FreeFileSync package for Ubuntu and Debian
 
+**This project is no more maintained**.
+
 This is the Debian and Ubuntu packaging project for FreeFileSync (http://freefilesync.sourceforge.net), the popular and cross-plateform files and folders sync tool.
 
 ## Packages
